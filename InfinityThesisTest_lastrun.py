@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Sat Nov 20 11:37:38 2021
+    on Sat Nov 20 12:01:55 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,7 +15,6 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-prefs.hardware['audioLib'] = 'ptb'
 from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
@@ -619,7 +618,7 @@ for thisBlockselectloop in Blockselectloop:
         # set up handler to look after randomisation of conditions etc
         SlowInstrLoop = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('/Users/sophiecb/Desktop/SlowInstructionsSheet.xlsx'),
+            trialList=data.importConditions('SlowInstructionsSheet2.xlsx'),
             seed=None, name='SlowInstrLoop')
         thisExp.addLoop(SlowInstrLoop)  # add the loop to the experiment
         thisSlowInstrLoop = SlowInstrLoop.trialList[0]  # so we can initialise stimuli with some values

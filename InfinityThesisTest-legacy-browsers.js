@@ -50,8 +50,8 @@ psychoJS.start({
   expInfo: expInfo,
   resources: [
     {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'},
+    {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
     {'name': 'InfinityThesisTest5.xlsx', 'path': 'InfinityThesisTest5.xlsx'},
-    {'name': '../SlowInstructionsSheet.xlsx', 'path': '../SlowInstructionsSheet.xlsx'},
     {'name': 'BlockSelectLoop.xlsx', 'path': 'BlockSelectLoop.xlsx'}
   ]
 });
@@ -426,7 +426,7 @@ function SlowInstrLoopLoopBegin(SlowInstrLoopLoopScheduler, snapshot) {
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
       extraInfo: expInfo, originPath: undefined,
-      trialList: '/Users/sophiecb/Desktop/SlowInstructionsSheet.xlsx',
+      trialList: 'SlowInstructionsSheet2.xlsx',
       seed: undefined, name: 'SlowInstrLoop'
     });
     psychoJS.experiment.addLoop(SlowInstrLoop); // add the loop to the experiment
