@@ -1,0 +1,75 @@
+2.5743 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+28.3141 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x14a78da90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x149ad50b8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+28.3145 	EXP 	window1: mouseVisible = True
+28.3146 	EXP 	window1: recordFrameIntervals = False
+28.4748 	EXP 	window1: recordFrameIntervals = True
+28.6587 	EXP 	window1: recordFrameIntervals = False
+29.6543 	EXP 	window1: mouseVisible = True
+29.6943 	EXP 	Created SlowInstrText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='SlowInstrText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.7201 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.7216 	EXP 	Created SlowText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='SlowText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.8241 	EXP 	Created EndStudyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='EndStudyText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for completing this study', units='height', win=Window(...), wrapWidth=1)
+29.8386 	EXP 	window1: mouseVisible = False
+29.8645 	EXP 	Imported SlowInstructionsSheet2.xlsx as conditions, 3 conditions, 1 params
+29.8701 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+29.8709 	EXP 	New trial (rep=0, index=0): {'SlowInstructions': 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'}
+29.9418 	EXP 	SlowInstrText: text = 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'
+29.9418 	EXP 	SlowInstrText: autoDraw = True
+34.7272 	EXP 	New trial (rep=0, index=1): {'SlowInstructions': 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press E to continue'}
+34.7472 	DATA 	Keypress: e
+34.7579 	EXP 	SlowInstrText: autoDraw = False
+34.7579 	EXP 	SlowInstrText: text = 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press E to continue'
+34.7579 	EXP 	SlowInstrText: autoDraw = True
+37.9603 	EXP 	New trial (rep=0, index=2): {'SlowInstructions': 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'}
+37.9915 	DATA 	Keypress: e
+38.0092 	EXP 	SlowInstrText: autoDraw = False
+38.0092 	EXP 	SlowInstrText: text = 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'
+38.0092 	EXP 	SlowInstrText: autoDraw = True
+41.1803 	EXP 	Imported InfinityThesisTest5.xlsx as conditions, 5 conditions, 2 params
+41.1819 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+41.1826 	EXP 	New trial (rep=0, index=0): {'Statement': 'Space has an end', 'Correct': 'i'}
+41.2014 	DATA 	Keypress: e
+41.2087 	EXP 	SlowInstrText: autoDraw = False
+41.2087 	EXP 	SlowText: text = 'Space has an end'
+41.2087 	EXP 	polygon: autoDraw = True
+41.6915 	EXP 	SlowText: autoDraw = True
+41.7088 	EXP 	polygon: autoDraw = False
+44.4283 	EXP 	New trial (rep=0, index=1): {'Statement': 'A minute is infinite', 'Correct': 'i'}
+44.4386 	DATA 	Keypress: i
+44.4601 	EXP 	polygon: autoDraw = False
+44.4601 	EXP 	SlowText: autoDraw = False
+44.4601 	EXP 	SlowText: text = 'A minute is infinite'
+44.4601 	EXP 	polygon: autoDraw = True
+44.9267 	EXP 	SlowText: autoDraw = True
+44.9599 	EXP 	polygon: autoDraw = False
+49.1451 	EXP 	New trial (rep=0, index=2): {'Statement': 'Numbers are finite', 'Correct': 'i'}
+49.1597 	DATA 	Keypress: e
+49.1754 	EXP 	polygon: autoDraw = False
+49.1754 	EXP 	SlowText: autoDraw = False
+49.1754 	EXP 	SlowText: text = 'Numbers are finite'
+49.1754 	EXP 	polygon: autoDraw = True
+49.6585 	EXP 	SlowText: autoDraw = True
+49.6765 	EXP 	polygon: autoDraw = False
+51.0103 	EXP 	New trial (rep=0, index=3): {'Statement': 'An inch cannot go on forever', 'Correct': 'e'}
+51.0196 	DATA 	Keypress: i
+51.0257 	EXP 	polygon: autoDraw = False
+51.0257 	EXP 	SlowText: autoDraw = False
+51.0257 	EXP 	SlowText: text = 'An inch cannot go on forever'
+51.0257 	EXP 	polygon: autoDraw = True
+51.5104 	EXP 	SlowText: autoDraw = True
+51.5271 	EXP 	polygon: autoDraw = False
+53.8129 	EXP 	New trial (rep=0, index=4): {'Statement': 'Time  goes on forever', 'Correct': 'e'}
+53.8226 	DATA 	Keypress: e
+53.8442 	EXP 	polygon: autoDraw = False
+53.8442 	EXP 	SlowText: autoDraw = False
+53.8442 	EXP 	SlowText: text = 'Time  goes on forever'
+53.8442 	EXP 	polygon: autoDraw = True
+54.3103 	EXP 	SlowText: autoDraw = True
+54.3441 	EXP 	polygon: autoDraw = False
+57.8357 	DATA 	Keypress: e
+57.8435 	EXP 	polygon: autoDraw = False
+57.8435 	EXP 	SlowText: autoDraw = False
+57.8435 	EXP 	EndStudyText: autoDraw = True
+59.3161 	DATA 	Keypress: e
+59.3441 	EXP 	EndStudyText: autoDraw = False
+59.6455 	EXP 	window1: mouseVisible = True
