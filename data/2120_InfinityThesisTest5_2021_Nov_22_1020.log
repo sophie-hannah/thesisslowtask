@@ -1,0 +1,89 @@
+4.2154 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+28.1164 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+28.1207 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x14209fa90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x14178e5c0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+28.1210 	EXP 	window1: mouseVisible = True
+28.1210 	EXP 	window1: recordFrameIntervals = False
+28.3337 	EXP 	window1: recordFrameIntervals = True
+28.3761 	WARNING 	t of last frame was 27.19ms (=1/36)
+28.4005 	WARNING 	t of last frame was 24.43ms (=1/40)
+28.4448 	WARNING 	t of last frame was 27.95ms (=1/35)
+28.4664 	WARNING 	t of last frame was 21.60ms (=1/46)
+28.5125 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+30.4843 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+31.5033 	EXP 	window1: mouseVisible = True
+31.5373 	EXP 	Created SlowInstrText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='SlowInstrText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5749 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+31.5778 	EXP 	Created SlowText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='SlowText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.6849 	EXP 	Created EndStudyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='EndStudyText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for completing this study', units='height', win=Window(...), wrapWidth=1)
+31.7008 	EXP 	window1: mouseVisible = False
+31.7263 	EXP 	Imported SlowInstructionsSheet2.xlsx as conditions, 3 conditions, 1 params
+31.7306 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+31.7313 	EXP 	New trial (rep=0, index=0): {'SlowInstructions': 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'}
+31.7991 	EXP 	SlowInstrText: text = 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'
+31.7991 	EXP 	SlowInstrText: autoDraw = True
+39.0538 	EXP 	New trial (rep=0, index=1): {'SlowInstructions': 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press E to continue'}
+39.0752 	DATA 	Keypress: e
+39.0838 	EXP 	SlowInstrText: autoDraw = False
+39.0838 	EXP 	SlowInstrText: text = 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press E to continue'
+39.0838 	EXP 	SlowInstrText: autoDraw = True
+40.2876 	EXP 	New trial (rep=0, index=2): {'SlowInstructions': 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'}
+40.3190 	DATA 	Keypress: e
+40.3333 	EXP 	SlowInstrText: autoDraw = False
+40.3333 	EXP 	SlowInstrText: text = 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'
+40.3333 	EXP 	SlowInstrText: autoDraw = True
+42.1826 	DATA 	Keypress: e
+42.2522 	EXP 	Imported InfinityThesisTest5.xlsx as conditions, 5 conditions, 2 params
+42.2552 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+42.2558 	EXP 	New trial (rep=0, index=0): {'Statement': 'An inch cannot go on forever', 'Correct': 'e'}
+42.3339 	EXP 	SlowInstrText: autoDraw = False
+42.3339 	EXP 	SlowText: text = 'An inch cannot go on forever'
+42.3339 	EXP 	polygon: autoDraw = True
+42.8158 	EXP 	SlowText: autoDraw = True
+42.8502 	EXP 	polygon: autoDraw = False
+44.6705 	EXP 	New trial (rep=0, index=1): {'Statement': 'Space has an end', 'Correct': 'i'}
+44.6808 	DATA 	Keypress: i
+44.7172 	EXP 	polygon: autoDraw = False
+44.7172 	EXP 	SlowText: autoDraw = False
+44.7172 	EXP 	SlowText: text = 'Space has an end'
+44.7172 	EXP 	polygon: autoDraw = True
+45.1687 	EXP 	SlowText: autoDraw = True
+45.2345 	EXP 	polygon: autoDraw = False
+47.1723 	EXP 	New trial (rep=0, index=2): {'Statement': 'Numbers are finite', 'Correct': 'i'}
+47.2033 	DATA 	Keypress: e
+47.2162 	EXP 	polygon: autoDraw = False
+47.2162 	EXP 	SlowText: autoDraw = False
+47.2162 	EXP 	SlowText: text = 'Numbers are finite'
+47.2162 	EXP 	polygon: autoDraw = True
+47.6846 	EXP 	SlowText: autoDraw = True
+47.7346 	EXP 	polygon: autoDraw = False
+51.2534 	EXP 	New trial (rep=0, index=3): {'Statement': 'A minute is infinite', 'Correct': 'i'}
+51.2604 	DATA 	Keypress: e
+51.2677 	EXP 	polygon: autoDraw = False
+51.2677 	EXP 	SlowText: autoDraw = False
+51.2677 	EXP 	SlowText: text = 'A minute is infinite'
+51.2677 	EXP 	polygon: autoDraw = True
+51.7516 	EXP 	SlowText: autoDraw = True
+51.7818 	EXP 	polygon: autoDraw = False
+53.5179 	DATA 	Mouse: Left button down, pos=(181,381)
+53.7363 	EXP 	New trial (rep=0, index=4): {'Statement': 'Time  goes on forever', 'Correct': 'e'}
+53.7450 	DATA 	Keypress: e
+53.7909 	EXP 	polygon: autoDraw = False
+53.7909 	EXP 	SlowText: autoDraw = False
+53.7909 	EXP 	SlowText: text = 'Time  goes on forever'
+53.7909 	EXP 	polygon: autoDraw = True
+53.7947 	DATA 	Mouse:  Left button up, pos=(181,381)
+54.2337 	EXP 	SlowText: autoDraw = True
+54.3015 	EXP 	polygon: autoDraw = False
+59.5232 	DATA 	Keypress: e
+59.5349 	EXP 	polygon: autoDraw = False
+59.5349 	EXP 	SlowText: autoDraw = False
+59.5349 	EXP 	EndStudyText: autoDraw = True
+60.5714 	DATA 	Keypress: e
+60.5849 	EXP 	EndStudyText: autoDraw = False
+60.8834 	EXP 	window1: mouseVisible = True
