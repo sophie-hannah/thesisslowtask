@@ -1,4 +1,4 @@
-﻿/************************************ 
+/************************************ 
  * Implicitinfinitysc-Slowtask Test *
  ************************************/
 
@@ -63,7 +63,7 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': '../../InfinityThesisPracticeStimuli.xlsx', 'path': '../../InfinityThesisPracticeStimuli.xlsx'},
+    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'},
     {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'}
   ]
 });
