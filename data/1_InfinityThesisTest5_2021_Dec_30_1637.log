@@ -1,0 +1,143 @@
+2.5225 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+12.0405 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x141c82b38>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1405ce4e0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.0409 	EXP 	window1: mouseVisible = True
+12.0410 	EXP 	window1: recordFrameIntervals = False
+12.2059 	EXP 	window1: recordFrameIntervals = True
+12.3901 	EXP 	window1: recordFrameIntervals = False
+13.2917 	EXP 	window1: mouseVisible = True
+13.3128 	EXP 	Created SlowInstrText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='SlowInstrText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.3344 	EXP 	Created FixcrossPractice = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='FixcrossPractice', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+13.3360 	EXP 	Created PracticeText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='PracticeText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.4380 	EXP 	Created PracticeEndText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='PracticeEndText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.4528 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+13.4539 	EXP 	Created SlowText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='SlowText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.4809 	EXP 	Created EndStudyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='EndStudyText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for completing this study', units='height', win=Window(...), wrapWidth=1)
+13.4921 	EXP 	window1: mouseVisible = False
+13.5057 	EXP 	Imported SlowInstructionsSheet2.xlsx as conditions, 5 conditions, 1 params
+13.5064 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+13.5068 	EXP 	New trial (rep=0, index=0): {'SlowInstructions': 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'}
+13.5561 	EXP 	SlowInstrText: text = 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'
+13.5561 	EXP 	SlowInstrText: autoDraw = True
+14.9927 	EXP 	New trial (rep=0, index=1): {'SlowInstructions': 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press E to continue'}
+15.0199 	DATA 	Keypress: e
+15.0394 	EXP 	SlowInstrText: autoDraw = False
+15.0394 	EXP 	SlowInstrText: text = 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press E to continue'
+15.0394 	EXP 	SlowInstrText: autoDraw = True
+15.3062 	EXP 	New trial (rep=0, index=2): {'SlowInstructions': 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'}
+15.3258 	DATA 	Keypress: e
+15.3390 	EXP 	SlowInstrText: autoDraw = False
+15.3390 	EXP 	SlowInstrText: text = 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'
+15.3390 	EXP 	SlowInstrText: autoDraw = True
+15.5579 	EXP 	New trial (rep=0, index=3): {'SlowInstructions': 'Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. '}
+15.5764 	DATA 	Keypress: e
+15.5886 	EXP 	SlowInstrText: autoDraw = False
+15.5886 	EXP 	SlowInstrText: text = 'Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. '
+15.5886 	EXP 	SlowInstrText: autoDraw = True
+17.8569 	EXP 	New trial (rep=0, index=4): {'SlowInstructions': 'If the statement is true, press the “E” key on your keyboard with your left pointer finger; if the statement is false, press the “I” key on your keyboard with your right pointer finger. Press E to continue'}
+17.8811 	DATA 	Keypress: e
+17.8892 	EXP 	SlowInstrText: autoDraw = False
+17.8892 	EXP 	SlowInstrText: text = 'If the statement is true, press the “E” key on your keyboard with your left pointer finger; if the statement is false, press the “I” key on your keyboard with your right pointer finger. Press E to continue'
+17.8892 	EXP 	SlowInstrText: autoDraw = True
+19.8937 	EXP 	Imported InfinityThesisPracticeStimuli.xlsx as conditions, 10 conditions, 2 params
+19.8947 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+19.8953 	EXP 	New trial (rep=0, index=0): {'practicetext': 'Humans cannot breathe water', 'practicecorrect': 'e'}
+19.9147 	DATA 	Keypress: e
+19.9224 	EXP 	SlowInstrText: autoDraw = False
+19.9224 	EXP 	PracticeText: text = 'Humans cannot breathe water'
+19.9224 	EXP 	FixcrossPractice: autoDraw = True
+20.3731 	EXP 	FixcrossPractice: autoDraw = False
+20.4057 	EXP 	PracticeText: autoDraw = True
+20.9938 	DATA 	Keypress: e
+23.2744 	EXP 	New trial (rep=0, index=1): {'practicetext': 'A clock is used to tell time', 'practicecorrect': 'e'}
+23.2841 	DATA 	Keypress: e
+23.3063 	EXP 	FixcrossPractice: autoDraw = False
+23.3063 	EXP 	PracticeText: autoDraw = False
+23.3063 	EXP 	PracticeText: text = 'A clock is used to tell time'
+23.3063 	EXP 	FixcrossPractice: autoDraw = True
+23.7554 	EXP 	FixcrossPractice: autoDraw = False
+23.7883 	EXP 	PracticeText: autoDraw = True
+25.9587 	EXP 	New trial (rep=0, index=2): {'practicetext': 'Magenta is a color', 'practicecorrect': 'e'}
+25.9682 	DATA 	Keypress: e
+25.9900 	EXP 	FixcrossPractice: autoDraw = False
+25.9900 	EXP 	PracticeText: autoDraw = False
+25.9900 	EXP 	PracticeText: text = 'Magenta is a color'
+25.9900 	EXP 	FixcrossPractice: autoDraw = True
+26.4425 	EXP 	FixcrossPractice: autoDraw = False
+26.4572 	EXP 	PracticeText: autoDraw = True
+34.1761 	EXP 	New trial (rep=0, index=3): {'practicetext': 'Jupiter is the planet we live on', 'practicecorrect': 'i'}
+34.1855 	DATA 	Keypress: e
+34.2071 	EXP 	FixcrossPractice: autoDraw = False
+34.2071 	EXP 	PracticeText: autoDraw = False
+34.2071 	EXP 	PracticeText: text = 'Jupiter is the planet we live on'
+34.2071 	EXP 	FixcrossPractice: autoDraw = True
+34.6576 	EXP 	FixcrossPractice: autoDraw = False
+34.6742 	EXP 	PracticeText: autoDraw = True
+40.0422 	EXP 	New trial (rep=0, index=4): {'practicetext': 'Mississippi is a country', 'practicecorrect': 'i'}
+40.0506 	DATA 	Keypress: e
+40.0561 	EXP 	FixcrossPractice: autoDraw = False
+40.0561 	EXP 	PracticeText: autoDraw = False
+40.0561 	EXP 	PracticeText: text = 'Mississippi is a country'
+40.0561 	EXP 	FixcrossPractice: autoDraw = True
+40.5070 	EXP 	FixcrossPractice: autoDraw = False
+40.5417 	EXP 	PracticeText: autoDraw = True
+42.3444 	DATA 	Keypress: 3
+43.4964 	DATA 	Keypress: e
+43.5104 	EXP 	New trial (rep=0, index=5): {'practicetext': 'A circle is a shape', 'practicecorrect': 'e'}
+43.5240 	EXP 	FixcrossPractice: autoDraw = False
+43.5240 	EXP 	PracticeText: autoDraw = False
+43.5240 	EXP 	PracticeText: text = 'A circle is a shape'
+43.5240 	EXP 	FixcrossPractice: autoDraw = True
+43.9749 	EXP 	FixcrossPractice: autoDraw = False
+44.0085 	EXP 	PracticeText: autoDraw = True
+45.3810 	DATA 	Keypress: e
+46.8264 	EXP 	New trial (rep=0, index=6): {'practicetext': 'The Earth is a star', 'practicecorrect': 'i'}
+46.8348 	DATA 	Keypress: e
+46.8403 	EXP 	FixcrossPractice: autoDraw = False
+46.8403 	EXP 	PracticeText: autoDraw = False
+46.8403 	EXP 	PracticeText: text = 'The Earth is a star'
+46.8403 	EXP 	FixcrossPractice: autoDraw = True
+47.2917 	EXP 	FixcrossPractice: autoDraw = False
+47.3248 	EXP 	PracticeText: autoDraw = True
+49.0923 	EXP 	New trial (rep=0, index=7): {'practicetext': 'Dinosaurs are extinct', 'practicecorrect': 'e'}
+49.1014 	DATA 	Keypress: e
+49.1072 	EXP 	FixcrossPractice: autoDraw = False
+49.1072 	EXP 	PracticeText: autoDraw = False
+49.1072 	EXP 	PracticeText: text = 'Dinosaurs are extinct'
+49.1072 	EXP 	FixcrossPractice: autoDraw = True
+49.5587 	EXP 	FixcrossPractice: autoDraw = False
+49.5913 	EXP 	PracticeText: autoDraw = True
+50.9104 	DATA 	Keypress: e
+51.7620 	EXP 	New trial (rep=0, index=8): {'practicetext': 'Humans cannot eat food', 'practicecorrect': 'i'}
+51.7732 	DATA 	Keypress: e
+51.7916 	EXP 	FixcrossPractice: autoDraw = False
+51.7916 	EXP 	PracticeText: autoDraw = False
+51.7916 	EXP 	PracticeText: text = 'Humans cannot eat food'
+51.7916 	EXP 	FixcrossPractice: autoDraw = True
+52.2425 	EXP 	FixcrossPractice: autoDraw = False
+52.2752 	EXP 	PracticeText: autoDraw = True
+53.3619 	DATA 	Keypress: e
+55.4619 	EXP 	New trial (rep=0, index=9): {'practicetext': 'A truck is an animal', 'practicecorrect': 'i'}
+55.4719 	DATA 	Keypress: e
+55.4924 	EXP 	FixcrossPractice: autoDraw = False
+55.4924 	EXP 	PracticeText: autoDraw = False
+55.4924 	EXP 	PracticeText: text = 'A truck is an animal'
+55.4924 	EXP 	FixcrossPractice: autoDraw = True
+55.9421 	EXP 	FixcrossPractice: autoDraw = False
+55.9758 	EXP 	PracticeText: autoDraw = True
+58.0202 	DATA 	Keypress: e
+58.0431 	EXP 	FixcrossPractice: autoDraw = False
+58.0431 	EXP 	PracticeText: autoDraw = False
+58.0431 	EXP 	PracticeEndText: autoDraw = True
+59.1132 	DATA 	Keypress: e
+59.8773 	DATA 	Keypress: e
+62.2999 	EXP 	Imported InfinityThesisStimuli.xlsx as conditions, 152 conditions, 2 params
+62.3010 	EXP 	Created sequence: random, trialTypes=152, nReps=1, seed=None
+62.3013 	EXP 	New trial (rep=0, index=0): {'Statement': 'Space can go on forever', 'Correct': 'e'}
+62.3089 	DATA 	Keypress: e
+62.3252 	EXP 	PracticeEndText: autoDraw = False
+62.3252 	EXP 	SlowText: text = 'Space can go on forever'
+62.3252 	EXP 	polygon: autoDraw = True
+62.7265 	EXP 	polygon: autoDraw = False
+62.8092 	EXP 	SlowText: autoDraw = True
+63.9632 	DATA 	Keypress: escape
+64.3360 	EXP 	window1: mouseVisible = True
