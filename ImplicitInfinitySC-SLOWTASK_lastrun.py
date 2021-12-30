@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Thu Dec 30 16:00:49 2021
+    on Thu Dec 30 16:34:23 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -356,7 +356,7 @@ SlowInstrLoop.saveAsText(filename + 'SlowInstrLoop.csv', delim=',',
 # set up handler to look after randomisation of conditions etc
 slowpracticeloop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('/Users/sophiecb/Desktop/InfinityThesisPracticeStimuli.xlsx'),
+    trialList=data.importConditions('InfinityThesisPracticeStimuli.xlsx'),
     seed=None, name='slowpracticeloop')
 thisExp.addLoop(slowpracticeloop)  # add the loop to the experiment
 thisSlowpracticeloop = slowpracticeloop.trialList[0]  # so we can initialise stimuli with some values
@@ -611,7 +611,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 SlowLoop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('InfinityThesisTest5.xlsx'),
+    trialList=data.importConditions('InfinityThesisStimuli.xlsx'),
     seed=None, name='SlowLoop')
 thisExp.addLoop(SlowLoop)  # add the loop to the experiment
 thisSlowLoop = SlowLoop.trialList[0]  # so we can initialise stimuli with some values
