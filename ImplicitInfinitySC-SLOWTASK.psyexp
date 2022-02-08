@@ -300,6 +300,23 @@
         <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+      <CodeComponent name="code_3">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="myCount = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="myCount = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="myCount = (myCount + 1);&amp;#10;if ((myCount &gt; 80)) {&amp;#10;    SlowLoop.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="myCount = myCount + 1&amp;#10;if myCount &gt; 80:&amp;#10;    SlowLoop.finished = True" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="BlockSelect">
       <CodeComponent name="code">
@@ -342,7 +359,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="30" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Thank you for completing this study" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you for completing this study. Please return to Qualtrics and input the following unique code into the survey: &amp;#10;&amp;#10;bravecoconut155" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -477,7 +494,7 @@
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.&amp;#10;&amp;#10;Press ‘E’ if the statement is true and ‘I’ if the statement is false. &amp;#10;&amp;#10;Press E to continue" valType="str"/>
+        <Param name="text" updates="constant" val="You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.&amp;#10;&amp;#10;Press ‘F’ if the statement is true and ‘J’ if the statement is false. &amp;#10;&amp;#10;Press F to continue" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>

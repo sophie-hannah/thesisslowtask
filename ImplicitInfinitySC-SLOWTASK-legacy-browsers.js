@@ -108,6 +108,7 @@ var SlowTrialClock;
 var polygon;
 var SlowText;
 var SlowKey;
+var myCount;
 var EndStudyClock;
 var EndStudyText;
 var endstudykey;
@@ -162,7 +163,7 @@ async function experimentInit() {
   PracticeEndText = new visual.TextStim({
     win: psychoJS.window,
     name: 'PracticeEndText',
-    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘E’ if the statement is true and ‘I’ if the statement is false. \n\nPress E to continue',
+    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress F to continue',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -196,12 +197,14 @@ async function experimentInit() {
   
   SlowKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  myCount = 0;
+  
   // Initialize components for Routine "EndStudy"
   EndStudyClock = new util.Clock();
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study',
+    text: 'Thank you for completing this study. Please return to Qualtrics and input the following unique code into the survey: \n\nbravecoconut155',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
@@ -832,6 +835,11 @@ function SlowTrialRoutineBegin(snapshot) {
     SlowKey.keys = undefined;
     SlowKey.rt = undefined;
     _SlowKey_allKeys = [];
+    myCount = (myCount + 1);
+    if ((myCount > 80)) {
+        SlowLoop.finished = true;
+    }
+    
     // keep track of which components have finished
     SlowTrialComponents = [];
     SlowTrialComponents.push(polygon);
@@ -1128,6 +1136,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   
