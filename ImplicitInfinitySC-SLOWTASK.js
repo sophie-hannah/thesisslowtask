@@ -71,9 +71,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'InfinityThesisPractice.xlsx', 'path': 'InfinityThesisPractice.xlsx'},
     {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
-    {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'}
+    {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'},
+    {'name': 'InfinityThesisPractice.xlsx', 'path': 'InfinityThesisPractice.xlsx'}
   ]
 });
 
@@ -490,7 +490,7 @@ function SlowInstrRoutineEachFrame() {
   }
 
     if (SlowInstrKey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = SlowInstrKey.getKeys({keyList: ['e'], waitRelease: false});
+      let theseKeys = SlowInstrKey.getKeys({keyList: ['f'], waitRelease: false});
       _SlowInstrKey_allKeys = _SlowInstrKey_allKeys.concat(theseKeys);
       if (_SlowInstrKey_allKeys.length > 0) {
         SlowInstrKey.keys = _SlowInstrKey_allKeys[_SlowInstrKey_allKeys.length - 1].name;  // just the last key pressed
@@ -610,7 +610,7 @@ function SlowPracticeRoutineEachFrame() {
 
     
     // *key_resp_2* updates
-    if (t >= 2.0 && key_resp_2.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1.0 && key_resp_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       key_resp_2.tStart = t;  // (not accounting for frame time here)
       key_resp_2.frameNStart = frameN;  // exact frame index
@@ -622,7 +622,7 @@ function SlowPracticeRoutineEachFrame() {
     }
 
     if (key_resp_2.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_2.getKeys({keyList: ['e', 'i'], waitRelease: false});
+      let theseKeys = key_resp_2.getKeys({keyList: ['f', 'j'], waitRelease: false});
       _key_resp_2_allKeys = _key_resp_2_allKeys.concat(theseKeys);
       if (_key_resp_2_allKeys.length > 0) {
         key_resp_2.keys = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].name;  // just the last key pressed
@@ -745,7 +745,7 @@ function PracticeEndRoutineEachFrame() {
 
     
     // *key_resp_3* updates
-    if (t >= 3.0 && key_resp_3.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1.0 && key_resp_3.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       key_resp_3.tStart = t;  // (not accounting for frame time here)
       key_resp_3.frameNStart = frameN;  // exact frame index
@@ -757,7 +757,7 @@ function PracticeEndRoutineEachFrame() {
     }
 
     if (key_resp_3.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_3.getKeys({keyList: ['e'], waitRelease: false});
+      let theseKeys = key_resp_3.getKeys({keyList: ['f'], waitRelease: false});
       _key_resp_3_allKeys = _key_resp_3_allKeys.concat(theseKeys);
       if (_key_resp_3_allKeys.length > 0) {
         key_resp_3.keys = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].name;  // just the last key pressed
@@ -880,7 +880,7 @@ function SlowTrialRoutineEachFrame() {
 
     
     // *SlowKey* updates
-    if (t >= 2.0 && SlowKey.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1.0 && SlowKey.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       SlowKey.tStart = t;  // (not accounting for frame time here)
       SlowKey.frameNStart = frameN;  // exact frame index
@@ -892,7 +892,7 @@ function SlowTrialRoutineEachFrame() {
     }
 
     if (SlowKey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = SlowKey.getKeys({keyList: ['e', 'i'], waitRelease: false});
+      let theseKeys = SlowKey.getKeys({keyList: ['f', 'j'], waitRelease: false});
       _SlowKey_allKeys = _SlowKey_allKeys.concat(theseKeys);
       if (_SlowKey_allKeys.length > 0) {
         SlowKey.keys = _SlowKey_allKeys[_SlowKey_allKeys.length - 1].name;  // just the last key pressed

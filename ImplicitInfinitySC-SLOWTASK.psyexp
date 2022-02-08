@@ -81,7 +81,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <KeyboardComponent name="SlowInstrKey">
-        <Param name="allowedKeys" updates="constant" val="'e'" valType="list"/>
+        <Param name="allowedKeys" updates="constant" val="'f'" valType="list"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -283,7 +283,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <KeyboardComponent name="SlowKey">
-        <Param name="allowedKeys" updates="constant" val="'e','i'" valType="list"/>
+        <Param name="allowedKeys" updates="constant" val="'f','j'" valType="list"/>
         <Param name="correctAns" updates="constant" val="$Correct" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -293,7 +293,7 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="2.0" valType="code"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="store" updates="constant" val="last key" valType="str"/>
@@ -437,7 +437,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_2">
-        <Param name="allowedKeys" updates="constant" val="'e','i'" valType="list"/>
+        <Param name="allowedKeys" updates="constant" val="'f','j'" valType="list"/>
         <Param name="correctAns" updates="constant" val="$practicecorrect" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -447,7 +447,7 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="2.0" valType="code"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="store" updates="constant" val="last key" valType="str"/>
@@ -482,7 +482,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_3">
-        <Param name="allowedKeys" updates="constant" val="'e'" valType="list"/>
+        <Param name="allowedKeys" updates="constant" val="'f'" valType="list"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -492,7 +492,7 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.0" valType="code"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="store" updates="constant" val="last key" valType="str"/>
