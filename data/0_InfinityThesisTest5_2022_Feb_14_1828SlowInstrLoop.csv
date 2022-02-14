@@ -1,0 +1,14 @@
+﻿SlowInstructions,n,SlowInstrKey.keys_raw,SlowInstrKey.rt_mean,SlowInstrKey.rt_raw,SlowInstrKey.rt_std,SlowInstrKey.started_mean,SlowInstrKey.started_raw,SlowInstrKey.started_std,SlowInstrKey.stopped_raw,SlowInstrText.started_mean,SlowInstrText.started_raw,SlowInstrText.started_std,SlowInstrText.stopped_raw,order
+"You will be shown a total of 80 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 80 statements.  Press F to Continue",1.0,'f',1.0778168439865112,1.0778168439865112,0.0,14.130078315734863,14.130078315734863,0.0,,14.130078315734863,14.130078315734863,0.0,,0.0
+We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press F to continue,1.0,'f',0.6176472306251526,0.6176472306251526,0.0,15.247121810913086,15.247121810913086,0.0,,15.247121810913086,15.247121810913086,0.0,,1.0
+"If the statement is true, you will press the “F” key on your keyboard with your left pointer finger; if the statement is false, you will press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,'f',0.4357278048992157,0.4357278048992157,0.0,15.930110931396484,15.930110931396484,0.0,,15.930110931396484,15.930110931396484,0.0,,2.0
+"Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. Press 'F' to continue.",1.0,'f',0.3992305397987366,0.3992305397987366,0.0,16.41267967224121,16.41267967224121,0.0,,16.41267967224121,16.41267967224121,0.0,,3.0
+"If the statement is true, press the “F” key on your keyboard with your left pointer finger; if the statement is false, press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,'f',0.48470538854599,0.48470538854599,0.0,16.84798812866211,16.84798812866211,0.0,,16.84798812866211,16.84798812866211,0.0,,4.0
+
+extraInfo
+participant,0
+session,001
+date,2022_Feb_14_1828
+expName,InfinityThesisTest5
+psychopyVersion,2021.2.3
+frameRate,59.74620482096653
