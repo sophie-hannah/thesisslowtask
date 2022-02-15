@@ -13,7 +13,7 @@ const { round } = util;
 
 // store info about the experiment session:
 let expName = 'ImplicitInfinitySC-SLOWTASK';  // from the Builder filename that created this script
-let expInfo = {'participant': '', 'session': '001'};
+let expInfo = {'participant': '', "Enter the ID from Qualtrics into the 'Participant' box above. Leave this box blank.": ''};
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
@@ -71,9 +71,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
+    {'name': 'InfinityThesisPractice.xlsx', 'path': 'InfinityThesisPractice.xlsx'},
     {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'},
-    {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
-    {'name': 'InfinityThesisPractice.xlsx', 'path': 'InfinityThesisPractice.xlsx'}
+    {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'}
   ]
 });
 
