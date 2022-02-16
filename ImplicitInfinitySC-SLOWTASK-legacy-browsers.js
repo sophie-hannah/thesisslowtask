@@ -734,7 +734,7 @@ function SlowPracticeRoutineEachFrame() {
     
     
     // *true* updates
-    if (t >= 0.06 && true.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0.05 && true.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       true.tStart = t;  // (not accounting for frame time here)
       true.frameNStart = frameN;  // exact frame index
@@ -742,7 +742,7 @@ function SlowPracticeRoutineEachFrame() {
       true.setAutoDraw(true);
     }
 
-    frameRemains = 0.06 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (true.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       true.setAutoDraw(false);
     }
