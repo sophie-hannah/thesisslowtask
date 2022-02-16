@@ -803,7 +803,7 @@ function SlowPracticeRoutineEnd() {
          key_resp_2.corr = 0;  // failed to respond (incorrectly)
       }
     }
-    // store data for psychoJS.experiment (ExperimentHandler)
+    // store data for thisExp (ExperimentHandler)
     psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
     psychoJS.experiment.addData('key_resp_2.corr', key_resp_2.corr);
     if (typeof key_resp_2.keys !== 'undefined') {  // we had a response
@@ -1237,7 +1237,7 @@ function SlowTrialRoutineEnd() {
          SlowKey.corr = 0;  // failed to respond (incorrectly)
       }
     }
-    // store data for psychoJS.experiment (ExperimentHandler)
+    // store data for thisExp (ExperimentHandler)
     psychoJS.experiment.addData('SlowKey.keys', SlowKey.keys);
     psychoJS.experiment.addData('SlowKey.corr', SlowKey.corr);
     if (typeof SlowKey.keys !== 'undefined') {  // we had a response
