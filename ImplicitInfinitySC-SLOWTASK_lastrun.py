@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Feb 16 16:50:26 2022
+    on Wed Feb 16 17:11:43 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -171,14 +171,14 @@ myCount = 0
 ftrue = visual.TextStim(win=win, name='ftrue',
     text='F=TRUE',
     font='Open Sans',
-    pos=(-.05, .3), height=0.06, wrapWidth=None, ori=0.0, 
+    pos=(-.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-4.0);
 jfalse = visual.TextStim(win=win, name='jfalse',
     text='J=FALSE',
     font='Open Sans',
-    pos=(.05, .3), height=0.06, wrapWidth=None, ori=0.0, 
+    pos=(.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-5.0);
@@ -519,7 +519,7 @@ for thisSlowpracticeloop in slowpracticeloop:
                 continueRoutine = False
         
         # *true* updates
-        if true.status == NOT_STARTED and tThisFlip >= 0.06-frameTolerance:
+        if true.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
             # keep track of start time/frame for later
             true.frameNStart = frameN  # exact frame index
             true.tStart = t  # local t and not account for scr refresh
@@ -921,7 +921,7 @@ for thisSlowLoop in SlowLoop:
                 continueRoutine = False
         
         # *ftrue* updates
-        if ftrue.status == NOT_STARTED and tThisFlip >= 0.06-frameTolerance:
+        if ftrue.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
             # keep track of start time/frame for later
             ftrue.frameNStart = frameN  # exact frame index
             ftrue.tStart = t  # local t and not account for scr refresh
