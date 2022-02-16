@@ -1,0 +1,13 @@
+﻿SlowInstructions,n,SlowInstrKey.keys_raw,SlowInstrKey.rt_mean,SlowInstrKey.rt_raw,SlowInstrKey.rt_std,SlowInstrKey.started_mean,SlowInstrKey.started_raw,SlowInstrKey.started_std,SlowInstrKey.stopped_raw,SlowInstrText.started_mean,SlowInstrText.started_raw,SlowInstrText.started_std,SlowInstrText.stopped_raw,order
+"You will be shown a total of 80 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 80 statements.  Press F to Continue",1.0,'f',0.8922664523124695,0.8922664523124695,0.0,24.9334774017334,24.9334774017334,0.0,,24.9334774017334,24.9334774017334,0.0,,0.0
+We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press F to continue,1.0,'f',0.4101329445838928,0.4101329445838928,0.0,25.86738395690918,25.86738395690918,0.0,,25.86738395690918,25.86738395690918,0.0,,1.0
+"If the statement is true, you will press the “F” key on your keyboard with your left pointer finger; if the statement is false, you will press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,'f',0.467349112033844,0.467349112033844,0.0,26.333118438720703,26.333118438720703,0.0,,26.333118438720703,26.333118438720703,0.0,,2.0
+"Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. Press 'F' to continue.",1.0,'f',0.38745832443237305,0.38745832443237305,0.0,26.851085662841797,26.851085662841797,0.0,,26.851085662841797,26.851085662841797,0.0,,3.0
+"If the statement is true, press the “F” key on your keyboard with your left pointer finger; if the statement is false, press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,'f',0.36077091097831726,0.36077091097831726,0.0,27.282630920410156,27.282630920410156,0.0,,27.282630920410156,27.282630920410156,0.0,,4.0
+
+extraInfo
+participant,215450
+date,2022_Feb_16_1650
+expName,Scientific and Linguistic Understanding
+psychopyVersion,2021.2.3
+frameRate,59.850982067831815

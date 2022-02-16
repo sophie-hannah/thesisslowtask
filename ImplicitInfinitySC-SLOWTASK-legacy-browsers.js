@@ -250,7 +250,7 @@ async function experimentInit() {
     text: 'F=TRUE',
     font: 'Open Sans',
     units: undefined, 
-    pos: [(- 0.05), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
+    pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
     depth: -4.0 
   });
@@ -261,7 +261,7 @@ async function experimentInit() {
     text: 'J=FALSE',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0.05, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
+    pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
     depth: -5.0 
   });
@@ -1168,7 +1168,7 @@ function SlowTrialRoutineEachFrame() {
     
     
     // *ftrue* updates
-    if (t >= 0.06 && ftrue.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0.05 && ftrue.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       ftrue.tStart = t;  // (not accounting for frame time here)
       ftrue.frameNStart = frameN;  // exact frame index
@@ -1176,7 +1176,7 @@ function SlowTrialRoutineEachFrame() {
       ftrue.setAutoDraw(true);
     }
 
-    frameRemains = 0.06 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (ftrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       ftrue.setAutoDraw(false);
     }

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Mon Feb 14 18:28:03 2022
+    on Wed Feb 16 16:50:26 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -36,8 +36,8 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
-expName = 'InfinityThesisTest5'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'session': '001'}
+expName = 'Scientific and Linguistic Understanding'  # from the Builder filename that created this script
+expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -129,17 +129,6 @@ false = visual.TextStim(win=win, name='false',
     languageStyle='LTR',
     depth=-4.0);
 
-# Initialize components for Routine "Encouragement"
-EncouragementClock = core.Clock()
-encouragetext = visual.TextStim(win=win, name='encouragetext',
-    text='Woah-oh! You’re Halfway There! \nKeep It Up! \n\nPress Space to Continue',
-    font='Open Sans',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-encouragekey = keyboard.Keyboard()
-
 # Initialize components for Routine "Advance"
 AdvanceClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
@@ -193,6 +182,17 @@ jfalse = visual.TextStim(win=win, name='jfalse',
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-5.0);
+
+# Initialize components for Routine "Encouragement"
+EncouragementClock = core.Clock()
+encouragetext = visual.TextStim(win=win, name='encouragetext',
+    text='Woah-oh! You’re Halfway There! \nKeep It Up! \n\nPress Space to Continue',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+encouragekey = keyboard.Keyboard()
 
 # Initialize components for Routine "Advance"
 AdvanceClock = core.Clock()
@@ -595,118 +595,6 @@ for thisSlowpracticeloop in slowpracticeloop:
     # the Routine "SlowPractice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # ------Prepare to start Routine "Encouragement"-------
-    continueRoutine = True
-    routineTimer.add(10.000000)
-    # update component parameters for each repeat
-    encouragekey.keys = []
-    encouragekey.rt = []
-    _encouragekey_allKeys = []
-    # keep track of which components have finished
-    EncouragementComponents = [encouragetext, encouragekey]
-    for thisComponent in EncouragementComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    EncouragementClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    
-    # -------Run Routine "Encouragement"-------
-    while continueRoutine and routineTimer.getTime() > 0:
-        # get current time
-        t = EncouragementClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=EncouragementClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *encouragetext* updates
-        if encouragetext.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            encouragetext.frameNStart = frameN  # exact frame index
-            encouragetext.tStart = t  # local t and not account for scr refresh
-            encouragetext.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(encouragetext, 'tStartRefresh')  # time at next scr refresh
-            encouragetext.setAutoDraw(True)
-        if encouragetext.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > encouragetext.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                encouragetext.tStop = t  # not accounting for scr refresh
-                encouragetext.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(encouragetext, 'tStopRefresh')  # time at next scr refresh
-                encouragetext.setAutoDraw(False)
-        
-        # *encouragekey* updates
-        waitOnFlip = False
-        if encouragekey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            encouragekey.frameNStart = frameN  # exact frame index
-            encouragekey.tStart = t  # local t and not account for scr refresh
-            encouragekey.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(encouragekey, 'tStartRefresh')  # time at next scr refresh
-            encouragekey.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(encouragekey.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(encouragekey.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if encouragekey.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > encouragekey.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                encouragekey.tStop = t  # not accounting for scr refresh
-                encouragekey.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(encouragekey, 'tStopRefresh')  # time at next scr refresh
-                encouragekey.status = FINISHED
-        if encouragekey.status == STARTED and not waitOnFlip:
-            theseKeys = encouragekey.getKeys(keyList=['space'], waitRelease=False)
-            _encouragekey_allKeys.extend(theseKeys)
-            if len(_encouragekey_allKeys):
-                encouragekey.keys = _encouragekey_allKeys[-1].name  # just the last key pressed
-                encouragekey.rt = _encouragekey_allKeys[-1].rt
-                # a response ends the routine
-                continueRoutine = False
-        if slowpracticeloop.thisN != 5:
-            continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in EncouragementComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "Encouragement"-------
-    for thisComponent in EncouragementComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    slowpracticeloop.addData('encouragetext.started', encouragetext.tStartRefresh)
-    slowpracticeloop.addData('encouragetext.stopped', encouragetext.tStopRefresh)
-    # check responses
-    if encouragekey.keys in ['', [], None]:  # No response was made
-        encouragekey.keys = None
-    slowpracticeloop.addData('encouragekey.keys',encouragekey.keys)
-    if encouragekey.keys != None:  # we had a response
-        slowpracticeloop.addData('encouragekey.rt', encouragekey.rt)
-    slowpracticeloop.addData('encouragekey.started', encouragekey.tStartRefresh)
-    slowpracticeloop.addData('encouragekey.stopped', encouragekey.tStopRefresh)
-    
     # ------Prepare to start Routine "Advance"-------
     continueRoutine = True
     routineTimer.add(10.000000)
@@ -1108,6 +996,118 @@ for thisSlowLoop in SlowLoop:
     SlowLoop.addData('SlowKey.stopped', SlowKey.tStopRefresh)
     # the Routine "SlowTrial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
+    
+    # ------Prepare to start Routine "Encouragement"-------
+    continueRoutine = True
+    routineTimer.add(10.000000)
+    # update component parameters for each repeat
+    encouragekey.keys = []
+    encouragekey.rt = []
+    _encouragekey_allKeys = []
+    # keep track of which components have finished
+    EncouragementComponents = [encouragetext, encouragekey]
+    for thisComponent in EncouragementComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    EncouragementClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "Encouragement"-------
+    while continueRoutine and routineTimer.getTime() > 0:
+        # get current time
+        t = EncouragementClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=EncouragementClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *encouragetext* updates
+        if encouragetext.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            encouragetext.frameNStart = frameN  # exact frame index
+            encouragetext.tStart = t  # local t and not account for scr refresh
+            encouragetext.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(encouragetext, 'tStartRefresh')  # time at next scr refresh
+            encouragetext.setAutoDraw(True)
+        if encouragetext.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > encouragetext.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                encouragetext.tStop = t  # not accounting for scr refresh
+                encouragetext.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(encouragetext, 'tStopRefresh')  # time at next scr refresh
+                encouragetext.setAutoDraw(False)
+        
+        # *encouragekey* updates
+        waitOnFlip = False
+        if encouragekey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            encouragekey.frameNStart = frameN  # exact frame index
+            encouragekey.tStart = t  # local t and not account for scr refresh
+            encouragekey.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(encouragekey, 'tStartRefresh')  # time at next scr refresh
+            encouragekey.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(encouragekey.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(encouragekey.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if encouragekey.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > encouragekey.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                encouragekey.tStop = t  # not accounting for scr refresh
+                encouragekey.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(encouragekey, 'tStopRefresh')  # time at next scr refresh
+                encouragekey.status = FINISHED
+        if encouragekey.status == STARTED and not waitOnFlip:
+            theseKeys = encouragekey.getKeys(keyList=['space'], waitRelease=False)
+            _encouragekey_allKeys.extend(theseKeys)
+            if len(_encouragekey_allKeys):
+                encouragekey.keys = _encouragekey_allKeys[-1].name  # just the last key pressed
+                encouragekey.rt = _encouragekey_allKeys[-1].rt
+                # a response ends the routine
+                continueRoutine = False
+        if SlowLoop.thisN != 20:
+            continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in EncouragementComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "Encouragement"-------
+    for thisComponent in EncouragementComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    SlowLoop.addData('encouragetext.started', encouragetext.tStartRefresh)
+    SlowLoop.addData('encouragetext.stopped', encouragetext.tStopRefresh)
+    # check responses
+    if encouragekey.keys in ['', [], None]:  # No response was made
+        encouragekey.keys = None
+    SlowLoop.addData('encouragekey.keys',encouragekey.keys)
+    if encouragekey.keys != None:  # we had a response
+        SlowLoop.addData('encouragekey.rt', encouragekey.rt)
+    SlowLoop.addData('encouragekey.started', encouragekey.tStartRefresh)
+    SlowLoop.addData('encouragekey.stopped', encouragekey.tStopRefresh)
     
     # ------Prepare to start Routine "Advance"-------
     continueRoutine = True
