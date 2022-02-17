@@ -63,6 +63,7 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
+    {'name': '../../Slow/InfinityThesisPracticeStimuli.xlsx', 'path': '../../Slow/InfinityThesisPracticeStimuli.xlsx'}
   ]
 });
 
@@ -94,10 +95,12 @@ var MouseClock;
 var SlowInstrClock;
 var SlowInstrText;
 var SlowInstrKey;
-var SlowPracticeClock;
-var FixcrossPractice;
-var PracticeText;
-var key_resp_2;
+var slowpracClock;
+var fixcross1;
+var PracticeText_2;
+var key_resp_5;
+var FTrue;
+var JFALSE;
 var AdvanceClock;
 var text;
 var key_resp_4;
@@ -139,10 +142,10 @@ async function experimentInit() {
   
   SlowInstrKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  // Initialize components for Routine "SlowPractice"
-  SlowPracticeClock = new util.Clock();
-  FixcrossPractice = new visual.ShapeStim ({
-    win: psychoJS.window, name: 'FixcrossPractice', 
+  // Initialize components for Routine "slowprac"
+  slowpracClock = new util.Clock();
+  fixcross1 = new visual.ShapeStim ({
+    win: psychoJS.window, name: 'fixcross1', 
     vertices: 'cross', size:[0.1, 0.1],
     ori: 0.0, pos: [0, 0],
     lineWidth: 1.0, lineColor: new util.Color('white'),
@@ -150,9 +153,9 @@ async function experimentInit() {
     opacity: undefined, depth: 0, interpolate: true,
   });
   
-  PracticeText = new visual.TextStim({
+  PracticeText_2 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'PracticeText',
+    name: 'PracticeText_2',
     text: '',
     font: 'Open Sans',
     units: undefined, 
@@ -161,11 +164,11 @@ async function experimentInit() {
     depth: -1.0 
   });
   
-  key_resp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  key_resp_5 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  true = new visual.TextStim({
+  FTrue = new visual.TextStim({
     win: psychoJS.window,
-    name: 'true',
+    name: 'FTrue',
     text: 'F=TRUE',
     font: 'Open Sans',
     units: undefined, 
@@ -174,9 +177,9 @@ async function experimentInit() {
     depth: -3.0 
   });
   
-  false = new visual.TextStim({
+  JFALSE = new visual.TextStim({
     win: psychoJS.window,
-    name: 'false',
+    name: 'JFALSE',
     text: 'J=FALSE',
     font: 'Open Sans',
     units: undefined, 
@@ -429,7 +432,7 @@ function slowpracticeloopLoopBegin(slowpracticeloopLoopScheduler, snapshot) {
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
-      trialList: 'InfinityThesisPractice.xlsx',
+      trialList: '/Users/sophiecb/Desktop/Slow/InfinityThesisPracticeStimuli.xlsx',
       seed: undefined, name: 'slowpracticeloop'
     });
     psychoJS.experiment.addLoop(slowpracticeloop); // add the loop to the experiment
@@ -440,9 +443,9 @@ function slowpracticeloopLoopBegin(slowpracticeloopLoopScheduler, snapshot) {
       const snapshot = slowpracticeloop.getSnapshot();
     
       slowpracticeloopLoopScheduler.add(importConditions(snapshot));
-      slowpracticeloopLoopScheduler.add(SlowPracticeRoutineBegin(snapshot));
-      slowpracticeloopLoopScheduler.add(SlowPracticeRoutineEachFrame());
-      slowpracticeloopLoopScheduler.add(SlowPracticeRoutineEnd());
+      slowpracticeloopLoopScheduler.add(slowpracRoutineBegin(snapshot));
+      slowpracticeloopLoopScheduler.add(slowpracRoutineEachFrame());
+      slowpracticeloopLoopScheduler.add(slowpracRoutineEnd());
       slowpracticeloopLoopScheduler.add(AdvanceRoutineBegin(snapshot));
       slowpracticeloopLoopScheduler.add(AdvanceRoutineEachFrame());
       slowpracticeloopLoopScheduler.add(AdvanceRoutineEnd());
@@ -635,31 +638,31 @@ function SlowInstrRoutineEnd() {
 }
 
 
-var _key_resp_2_allKeys;
-var SlowPracticeComponents;
-function SlowPracticeRoutineBegin(snapshot) {
+var _key_resp_5_allKeys;
+var slowpracComponents;
+function slowpracRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //------Prepare to start Routine 'SlowPractice'-------
+    //------Prepare to start Routine 'slowprac'-------
     t = 0;
-    SlowPracticeClock.reset(); // clock
+    slowpracClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    PracticeText.setText(practicetext);
-    key_resp_2.keys = undefined;
-    key_resp_2.rt = undefined;
-    _key_resp_2_allKeys = [];
+    PracticeText_2.setText(practicetext);
+    key_resp_5.keys = undefined;
+    key_resp_5.rt = undefined;
+    _key_resp_5_allKeys = [];
     // keep track of which components have finished
-    SlowPracticeComponents = [];
-    SlowPracticeComponents.push(FixcrossPractice);
-    SlowPracticeComponents.push(PracticeText);
-    SlowPracticeComponents.push(key_resp_2);
-    SlowPracticeComponents.push(true);
-    SlowPracticeComponents.push(false);
+    slowpracComponents = [];
+    slowpracComponents.push(fixcross1);
+    slowpracComponents.push(PracticeText_2);
+    slowpracComponents.push(key_resp_5);
+    slowpracComponents.push(FTrue);
+    slowpracComponents.push(JFALSE);
     
-    SlowPracticeComponents.forEach( function(thisComponent) {
+    slowpracComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
        });
@@ -668,61 +671,61 @@ function SlowPracticeRoutineBegin(snapshot) {
 }
 
 
-function SlowPracticeRoutineEachFrame() {
+function slowpracRoutineEachFrame() {
   return async function () {
-    //------Loop for each frame of Routine 'SlowPractice'-------
+    //------Loop for each frame of Routine 'slowprac'-------
     // get current time
-    t = SlowPracticeClock.getTime();
+    t = slowpracClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *FixcrossPractice* updates
-    if (t >= 0.0 && FixcrossPractice.status === PsychoJS.Status.NOT_STARTED) {
+    // *fixcross1* updates
+    if (t >= 0.0 && fixcross1.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      FixcrossPractice.tStart = t;  // (not accounting for frame time here)
-      FixcrossPractice.frameNStart = frameN;  // exact frame index
+      fixcross1.tStart = t;  // (not accounting for frame time here)
+      fixcross1.frameNStart = frameN;  // exact frame index
       
-      FixcrossPractice.setAutoDraw(true);
+      fixcross1.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 0.45 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (FixcrossPractice.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      FixcrossPractice.setAutoDraw(false);
+    frameRemains = 0.0 + 0.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (fixcross1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fixcross1.setAutoDraw(false);
     }
     
-    // *PracticeText* updates
-    if (t >= 0.5 && PracticeText.status === PsychoJS.Status.NOT_STARTED) {
+    // *PracticeText_2* updates
+    if (t >= 1 && PracticeText_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      PracticeText.tStart = t;  // (not accounting for frame time here)
-      PracticeText.frameNStart = frameN;  // exact frame index
+      PracticeText_2.tStart = t;  // (not accounting for frame time here)
+      PracticeText_2.frameNStart = frameN;  // exact frame index
       
-      PracticeText.setAutoDraw(true);
+      PracticeText_2.setAutoDraw(true);
     }
 
     
-    // *key_resp_2* updates
-    if (t >= 1.0 && key_resp_2.status === PsychoJS.Status.NOT_STARTED) {
+    // *key_resp_5* updates
+    if (t >= 1 && key_resp_5.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      key_resp_2.tStart = t;  // (not accounting for frame time here)
-      key_resp_2.frameNStart = frameN;  // exact frame index
+      key_resp_5.tStart = t;  // (not accounting for frame time here)
+      key_resp_5.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { key_resp_2.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { key_resp_2.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { key_resp_2.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { key_resp_5.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_5.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_5.clearEvents(); });
     }
 
-    if (key_resp_2.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_2.getKeys({keyList: ['f', 'j'], waitRelease: false});
-      _key_resp_2_allKeys = _key_resp_2_allKeys.concat(theseKeys);
-      if (_key_resp_2_allKeys.length > 0) {
-        key_resp_2.keys = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].name;  // just the last key pressed
-        key_resp_2.rt = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].rt;
+    if (key_resp_5.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_5.getKeys({keyList: ['f', 'j'], waitRelease: false});
+      _key_resp_5_allKeys = _key_resp_5_allKeys.concat(theseKeys);
+      if (_key_resp_5_allKeys.length > 0) {
+        key_resp_5.keys = _key_resp_5_allKeys[_key_resp_5_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_5.rt = _key_resp_5_allKeys[_key_resp_5_allKeys.length - 1].rt;
         // was this correct?
-        if (key_resp_2.keys == practicecorrect) {
-            key_resp_2.corr = 1;
+        if (key_resp_5.keys == practicecorrect) {
+            key_resp_5.corr = 1;
         } else {
-            key_resp_2.corr = 0;
+            key_resp_5.corr = 0;
         }
         // a response ends the routine
         continueRoutine = false;
@@ -730,33 +733,25 @@ function SlowPracticeRoutineEachFrame() {
     }
     
     
-    // *true* updates
-    if (t >= 0.05 && true.status === PsychoJS.Status.NOT_STARTED) {
+    // *FTrue* updates
+    if (t >= 0.05 && FTrue.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      true.tStart = t;  // (not accounting for frame time here)
-      true.frameNStart = frameN;  // exact frame index
+      FTrue.tStart = t;  // (not accounting for frame time here)
+      FTrue.frameNStart = frameN;  // exact frame index
       
-      true.setAutoDraw(true);
+      FTrue.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (true.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      true.setAutoDraw(false);
-    }
     
-    // *false* updates
-    if (t >= 0.05 && false.status === PsychoJS.Status.NOT_STARTED) {
+    // *JFALSE* updates
+    if (t >= 0.05 && JFALSE.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      false.tStart = t;  // (not accounting for frame time here)
-      false.frameNStart = frameN;  // exact frame index
+      JFALSE.tStart = t;  // (not accounting for frame time here)
+      JFALSE.frameNStart = frameN;  // exact frame index
       
-      false.setAutoDraw(true);
+      JFALSE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (false.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      false.setAutoDraw(false);
-    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -768,7 +763,7 @@ function SlowPracticeRoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    SlowPracticeComponents.forEach( function(thisComponent) {
+    slowpracComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
       }
@@ -784,32 +779,32 @@ function SlowPracticeRoutineEachFrame() {
 }
 
 
-function SlowPracticeRoutineEnd() {
+function slowpracRoutineEnd() {
   return async function () {
-    //------Ending Routine 'SlowPractice'-------
-    SlowPracticeComponents.forEach( function(thisComponent) {
+    //------Ending Routine 'slowprac'-------
+    slowpracComponents.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     });
     // was no response the correct answer?!
-    if (key_resp_2.keys === undefined) {
+    if (key_resp_5.keys === undefined) {
       if (['None','none',undefined].includes(practicecorrect)) {
-         key_resp_2.corr = 1;  // correct non-response
+         key_resp_5.corr = 1;  // correct non-response
       } else {
-         key_resp_2.corr = 0;  // failed to respond (incorrectly)
+         key_resp_5.corr = 0;  // failed to respond (incorrectly)
       }
     }
     // store data for thisExp (ExperimentHandler)
-    psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
-    psychoJS.experiment.addData('key_resp_2.corr', key_resp_2.corr);
-    if (typeof key_resp_2.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_2.rt', key_resp_2.rt);
+    psychoJS.experiment.addData('key_resp_5.keys', key_resp_5.keys);
+    psychoJS.experiment.addData('key_resp_5.corr', key_resp_5.corr);
+    if (typeof key_resp_5.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_5.rt', key_resp_5.rt);
         routineTimer.reset();
         }
     
-    key_resp_2.stop();
-    // the Routine "SlowPractice" was not non-slip safe, so reset the non-slip timer
+    key_resp_5.stop();
+    // the Routine "slowprac" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;
