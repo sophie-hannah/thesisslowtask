@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Feb 16 19:49:38 2022
+    on Thu Feb 17 13:14:42 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -102,33 +102,33 @@ SlowInstrText = visual.TextStim(win=win, name='SlowInstrText',
     depth=0.0);
 SlowInstrKey = keyboard.Keyboard()
 
-# Initialize components for Routine "SlowPractice"
-SlowPracticeClock = core.Clock()
-FixcrossPractice = visual.ShapeStim(
-    win=win, name='FixcrossPractice', vertices='cross',
+# Initialize components for Routine "slowprac"
+slowpracClock = core.Clock()
+fixcross1 = visual.ShapeStim(
+    win=win, name='fixcross1', vertices='cross',
     size=(0.1, 0.1),
     ori=0.0, pos=(0, 0),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor=[-1.0000, -1.0000, -1.0000],
     opacity=None, depth=0.0, interpolate=True)
-PracticeText = visual.TextStim(win=win, name='PracticeText',
+PracticeText_2 = visual.TextStim(win=win, name='PracticeText_2',
     text='',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
-key_resp_2 = keyboard.Keyboard()
-true = visual.TextStim(win=win, name='true',
+key_resp_5 = keyboard.Keyboard()
+FTrue = visual.TextStim(win=win, name='FTrue',
     text='F=TRUE',
     font='Open Sans',
     pos=(-.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-3.0);
-false = visual.TextStim(win=win, name='false',
+JFALSE = visual.TextStim(win=win, name='JFALSE',
     text='J=FALSE',
     font='Open Sans',
-    pos=(.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
+    pos=(.5,.3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-4.0);
@@ -422,7 +422,7 @@ SlowInstrLoop.saveAsText(filename + 'SlowInstrLoop.csv', delim=',',
 # set up handler to look after randomisation of conditions etc
 slowpracticeloop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('InfinityThesisPractice.xlsx'),
+    trialList=data.importConditions('InfinityThesisPracticeStimuli.xlsx'),
     seed=None, name='slowpracticeloop')
 thisExp.addLoop(slowpracticeloop)  # add the loop to the experiment
 thisSlowpracticeloop = slowpracticeloop.trialList[0]  # so we can initialise stimuli with some values
@@ -438,16 +438,16 @@ for thisSlowpracticeloop in slowpracticeloop:
         for paramName in thisSlowpracticeloop:
             exec('{} = thisSlowpracticeloop[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "SlowPractice"-------
+    # ------Prepare to start Routine "slowprac"-------
     continueRoutine = True
     # update component parameters for each repeat
-    PracticeText.setText(practicetext)
-    key_resp_2.keys = []
-    key_resp_2.rt = []
-    _key_resp_2_allKeys = []
+    PracticeText_2.setText(practicetext)
+    key_resp_5.keys = []
+    key_resp_5.rt = []
+    _key_resp_5_allKeys = []
     # keep track of which components have finished
-    SlowPracticeComponents = [FixcrossPractice, PracticeText, key_resp_2, true, false]
-    for thisComponent in SlowPracticeComponents:
+    slowpracComponents = [fixcross1, PracticeText_2, key_resp_5, FTrue, JFALSE]
+    for thisComponent in slowpracComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -457,104 +457,88 @@ for thisSlowpracticeloop in slowpracticeloop:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    SlowPracticeClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    slowpracClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "SlowPractice"-------
+    # -------Run Routine "slowprac"-------
     while continueRoutine:
         # get current time
-        t = SlowPracticeClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=SlowPracticeClock)
+        t = slowpracClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=slowpracClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *FixcrossPractice* updates
-        if FixcrossPractice.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *fixcross1* updates
+        if fixcross1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            FixcrossPractice.frameNStart = frameN  # exact frame index
-            FixcrossPractice.tStart = t  # local t and not account for scr refresh
-            FixcrossPractice.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(FixcrossPractice, 'tStartRefresh')  # time at next scr refresh
-            FixcrossPractice.setAutoDraw(True)
-        if FixcrossPractice.status == STARTED:
+            fixcross1.frameNStart = frameN  # exact frame index
+            fixcross1.tStart = t  # local t and not account for scr refresh
+            fixcross1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(fixcross1, 'tStartRefresh')  # time at next scr refresh
+            fixcross1.setAutoDraw(True)
+        if fixcross1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > FixcrossPractice.tStartRefresh + 0.45-frameTolerance:
+            if tThisFlipGlobal > fixcross1.tStartRefresh + 0.5-frameTolerance:
                 # keep track of stop time/frame for later
-                FixcrossPractice.tStop = t  # not accounting for scr refresh
-                FixcrossPractice.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(FixcrossPractice, 'tStopRefresh')  # time at next scr refresh
-                FixcrossPractice.setAutoDraw(False)
+                fixcross1.tStop = t  # not accounting for scr refresh
+                fixcross1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(fixcross1, 'tStopRefresh')  # time at next scr refresh
+                fixcross1.setAutoDraw(False)
         
-        # *PracticeText* updates
-        if PracticeText.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        # *PracticeText_2* updates
+        if PracticeText_2.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
             # keep track of start time/frame for later
-            PracticeText.frameNStart = frameN  # exact frame index
-            PracticeText.tStart = t  # local t and not account for scr refresh
-            PracticeText.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(PracticeText, 'tStartRefresh')  # time at next scr refresh
-            PracticeText.setAutoDraw(True)
+            PracticeText_2.frameNStart = frameN  # exact frame index
+            PracticeText_2.tStart = t  # local t and not account for scr refresh
+            PracticeText_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(PracticeText_2, 'tStartRefresh')  # time at next scr refresh
+            PracticeText_2.setAutoDraw(True)
         
-        # *key_resp_2* updates
+        # *key_resp_5* updates
         waitOnFlip = False
-        if key_resp_2.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        if key_resp_5.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
             # keep track of start time/frame for later
-            key_resp_2.frameNStart = frameN  # exact frame index
-            key_resp_2.tStart = t  # local t and not account for scr refresh
-            key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
-            key_resp_2.status = STARTED
+            key_resp_5.frameNStart = frameN  # exact frame index
+            key_resp_5.tStart = t  # local t and not account for scr refresh
+            key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
+            key_resp_5.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_2.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_2.getKeys(keyList=['f', 'j'], waitRelease=False)
-            _key_resp_2_allKeys.extend(theseKeys)
-            if len(_key_resp_2_allKeys):
-                key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
-                key_resp_2.rt = _key_resp_2_allKeys[-1].rt
+            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_5.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_5.getKeys(keyList=['f', 'j'], waitRelease=False)
+            _key_resp_5_allKeys.extend(theseKeys)
+            if len(_key_resp_5_allKeys):
+                key_resp_5.keys = _key_resp_5_allKeys[-1].name  # just the last key pressed
+                key_resp_5.rt = _key_resp_5_allKeys[-1].rt
                 # was this correct?
-                if (key_resp_2.keys == str(practicecorrect)) or (key_resp_2.keys == practicecorrect):
-                    key_resp_2.corr = 1
+                if (key_resp_5.keys == str(practicecorrect)) or (key_resp_5.keys == practicecorrect):
+                    key_resp_5.corr = 1
                 else:
-                    key_resp_2.corr = 0
+                    key_resp_5.corr = 0
                 # a response ends the routine
                 continueRoutine = False
         
-        # *true* updates
-        if true.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+        # *FTrue* updates
+        if FTrue.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
             # keep track of start time/frame for later
-            true.frameNStart = frameN  # exact frame index
-            true.tStart = t  # local t and not account for scr refresh
-            true.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(true, 'tStartRefresh')  # time at next scr refresh
-            true.setAutoDraw(True)
-        if true.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > true.tStartRefresh + 20-frameTolerance:
-                # keep track of stop time/frame for later
-                true.tStop = t  # not accounting for scr refresh
-                true.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(true, 'tStopRefresh')  # time at next scr refresh
-                true.setAutoDraw(False)
+            FTrue.frameNStart = frameN  # exact frame index
+            FTrue.tStart = t  # local t and not account for scr refresh
+            FTrue.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FTrue, 'tStartRefresh')  # time at next scr refresh
+            FTrue.setAutoDraw(True)
         
-        # *false* updates
-        if false.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+        # *JFALSE* updates
+        if JFALSE.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
             # keep track of start time/frame for later
-            false.frameNStart = frameN  # exact frame index
-            false.tStart = t  # local t and not account for scr refresh
-            false.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(false, 'tStartRefresh')  # time at next scr refresh
-            false.setAutoDraw(True)
-        if false.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > false.tStartRefresh + 20-frameTolerance:
-                # keep track of stop time/frame for later
-                false.tStop = t  # not accounting for scr refresh
-                false.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(false, 'tStopRefresh')  # time at next scr refresh
-                false.setAutoDraw(False)
+            JFALSE.frameNStart = frameN  # exact frame index
+            JFALSE.tStart = t  # local t and not account for scr refresh
+            JFALSE.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(JFALSE, 'tStartRefresh')  # time at next scr refresh
+            JFALSE.setAutoDraw(True)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -564,7 +548,7 @@ for thisSlowpracticeloop in slowpracticeloop:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in SlowPracticeComponents:
+        for thisComponent in slowpracComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -573,30 +557,32 @@ for thisSlowpracticeloop in slowpracticeloop:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "SlowPractice"-------
-    for thisComponent in SlowPracticeComponents:
+    # -------Ending Routine "slowprac"-------
+    for thisComponent in slowpracComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    slowpracticeloop.addData('FixcrossPractice.started', FixcrossPractice.tStartRefresh)
-    slowpracticeloop.addData('FixcrossPractice.stopped', FixcrossPractice.tStopRefresh)
-    slowpracticeloop.addData('PracticeText.started', PracticeText.tStartRefresh)
-    slowpracticeloop.addData('PracticeText.stopped', PracticeText.tStopRefresh)
+    slowpracticeloop.addData('fixcross1.started', fixcross1.tStartRefresh)
+    slowpracticeloop.addData('fixcross1.stopped', fixcross1.tStopRefresh)
+    slowpracticeloop.addData('PracticeText_2.started', PracticeText_2.tStartRefresh)
+    slowpracticeloop.addData('PracticeText_2.stopped', PracticeText_2.tStopRefresh)
     # check responses
-    if key_resp_2.keys in ['', [], None]:  # No response was made
-        key_resp_2.keys = None
+    if key_resp_5.keys in ['', [], None]:  # No response was made
+        key_resp_5.keys = None
         # was no response the correct answer?!
         if str(practicecorrect).lower() == 'none':
-           key_resp_2.corr = 1;  # correct non-response
+           key_resp_5.corr = 1;  # correct non-response
         else:
-           key_resp_2.corr = 0;  # failed to respond (incorrectly)
+           key_resp_5.corr = 0;  # failed to respond (incorrectly)
     # store data for slowpracticeloop (TrialHandler)
-    slowpracticeloop.addData('key_resp_2.keys',key_resp_2.keys)
-    slowpracticeloop.addData('key_resp_2.corr', key_resp_2.corr)
-    if key_resp_2.keys != None:  # we had a response
-        slowpracticeloop.addData('key_resp_2.rt', key_resp_2.rt)
-    slowpracticeloop.addData('key_resp_2.started', key_resp_2.tStartRefresh)
-    slowpracticeloop.addData('key_resp_2.stopped', key_resp_2.tStopRefresh)
-    # the Routine "SlowPractice" was not non-slip safe, so reset the non-slip timer
+    slowpracticeloop.addData('key_resp_5.keys',key_resp_5.keys)
+    slowpracticeloop.addData('key_resp_5.corr', key_resp_5.corr)
+    if key_resp_5.keys != None:  # we had a response
+        slowpracticeloop.addData('key_resp_5.rt', key_resp_5.rt)
+    slowpracticeloop.addData('key_resp_5.started', key_resp_5.tStartRefresh)
+    slowpracticeloop.addData('key_resp_5.stopped', key_resp_5.tStopRefresh)
+    slowpracticeloop.addData('JFALSE.started', JFALSE.tStartRefresh)
+    slowpracticeloop.addData('JFALSE.stopped', JFALSE.tStopRefresh)
+    # the Routine "slowprac" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # ------Prepare to start Routine "Advance"-------

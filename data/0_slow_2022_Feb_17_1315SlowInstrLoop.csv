@@ -1,0 +1,13 @@
+﻿SlowInstructions,n,SlowInstrKey.keys_raw,SlowInstrKey.rt_mean,SlowInstrKey.rt_raw,SlowInstrKey.rt_std,SlowInstrKey.started_mean,SlowInstrKey.started_raw,SlowInstrKey.started_std,SlowInstrKey.stopped_raw,SlowInstrText.started_mean,SlowInstrText.started_raw,SlowInstrText.started_std,SlowInstrText.stopped_raw,order
+"You will be shown a total of 80 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 80 statements.  Press F to Continue",1.0,'f',0.32273662090301514,0.32273662090301514,0.0,41.923583984375,41.923583984375,0.0,,41.923583984375,41.923583984375,0.0,,0.0
+We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press F to continue,1.0,'f',0.2976594865322113,0.2976594865322113,0.0,42.30823516845703,42.30823516845703,0.0,,42.30823516845703,42.30823516845703,0.0,,1.0
+"If the statement is true, you will press the “F” key on your keyboard with your left pointer finger; if the statement is false, you will press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,'f',0.2576490640640259,0.2576490640640259,0.0,42.65797424316406,42.65797424316406,0.0,,42.65797424316406,42.65797424316406,0.0,,2.0
+"Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. Press 'F' to continue.",1.0,'f',0.3001151382923126,0.3001151382923126,0.0,42.95686340332031,42.95686340332031,0.0,,42.95686340332031,42.95686340332031,0.0,,3.0
+"If the statement is true, press the “F” key on your keyboard with your left pointer finger; if the statement is false, press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,'f',0.3205009698867798,0.3205009698867798,0.0,43.29102325439453,43.29102325439453,0.0,,43.29102325439453,43.29102325439453,0.0,,4.0
+
+extraInfo
+participant,0
+date,2022_Feb_17_1315
+expName,slow
+psychopyVersion,2021.2.3
+frameRate,59.95926870946831

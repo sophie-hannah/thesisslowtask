@@ -1,0 +1,255 @@
+1.5687 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+40.7431 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x146588be0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1455932b0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+40.7435 	EXP 	window1: mouseVisible = True
+40.7435 	EXP 	window1: recordFrameIntervals = False
+40.9079 	EXP 	window1: recordFrameIntervals = True
+41.0915 	EXP 	window1: recordFrameIntervals = False
+41.5235 	EXP 	window1: mouseVisible = True
+41.5406 	EXP 	Created SlowInstrText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='SlowInstrText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+41.5626 	EXP 	Created fixcross1 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='fixcross1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+41.5642 	EXP 	Created PracticeText_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='PracticeText_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+41.6500 	EXP 	Created FTrue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='FTrue', opacity=1, ori=0.0, pos=array([-0.5,  0.3]), rgb=UNKNOWN, text='F=TRUE', units='height', win=Window(...), wrapWidth=1)
+41.6584 	EXP 	Created JFALSE = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='JFALSE', opacity=1, ori=0.0, pos=array([0.5, 0.3]), rgb=UNKNOWN, text='J=FALSE', units='height', win=Window(...), wrapWidth=1)
+41.6756 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press Space to Continue', units='height', win=Window(...), wrapWidth=1)
+41.7262 	EXP 	Created PracticeEndText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='PracticeEndText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+41.7414 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+41.7425 	EXP 	Created SlowText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='SlowText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+41.7566 	EXP 	Created ftrue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='ftrue', opacity=1, ori=0.0, pos=array([-0.5,  0.3]), rgb=UNKNOWN, text='F=TRUE', units='height', win=Window(...), wrapWidth=1)
+41.7598 	EXP 	Created jfalse = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='jfalse', opacity=1, ori=0.0, pos=array([0.5, 0.3]), rgb=UNKNOWN, text='J=FALSE', units='height', win=Window(...), wrapWidth=1)
+41.7725 	EXP 	Created encouragetext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='encouragetext', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+41.7876 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press Space to Continue', units='height', win=Window(...), wrapWidth=1)
+41.8377 	EXP 	Created EndStudyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='EndStudyText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+41.8492 	EXP 	window1: mouseVisible = False
+41.8713 	EXP 	Imported SlowInstructionsSheet2.xlsx as conditions, 5 conditions, 1 params
+41.8720 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+41.8724 	EXP 	New trial (rep=0, index=0): {'SlowInstructions': 'You will be shown a total of 80 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 80 statements.  Press F to Continue'}
+41.9236 	EXP 	SlowInstrText: text = 'You will be shown a total of 80 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 80 statements.  Press F to Continue'
+41.9236 	EXP 	SlowInstrText: autoDraw = True
+42.2617 	EXP 	New trial (rep=0, index=1): {'SlowInstructions': 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press F to continue'}
+42.2851 	DATA 	Keypress: f
+42.3082 	EXP 	SlowInstrText: autoDraw = False
+42.3082 	EXP 	SlowInstrText: text = 'We urge you to try your best and take your time. Each statement will appear on your screen and you will have as much time as you need to decide if it is true or false. Press F to continue'
+42.3082 	EXP 	SlowInstrText: autoDraw = True
+42.6082 	EXP 	New trial (rep=0, index=2): {'SlowInstructions': 'If the statement is true, you will press the “F” key on your keyboard with your left pointer finger; if the statement is false, you will press the “J” key on your keyboard with your right pointer finger. Press F to continue'}
+42.6409 	DATA 	Keypress: f
+42.6580 	EXP 	SlowInstrText: autoDraw = False
+42.6580 	EXP 	SlowInstrText: text = 'If the statement is true, you will press the “F” key on your keyboard with your left pointer finger; if the statement is false, you will press the “J” key on your keyboard with your right pointer finger. Press F to continue'
+42.6580 	EXP 	SlowInstrText: autoDraw = True
+42.9245 	EXP 	New trial (rep=0, index=3): {'SlowInstructions': "Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. Press 'F' to continue."}
+42.9424 	DATA 	Keypress: f
+42.9569 	EXP 	SlowInstrText: autoDraw = False
+42.9569 	EXP 	SlowInstrText: text = "Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. Press 'F' to continue."
+42.9569 	EXP 	SlowInstrText: autoDraw = True
+43.2595 	EXP 	New trial (rep=0, index=4): {'SlowInstructions': 'If the statement is true, press the “F” key on your keyboard with your left pointer finger; if the statement is false, press the “J” key on your keyboard with your right pointer finger. Press F to continue'}
+43.2743 	DATA 	Keypress: f
+43.2910 	EXP 	SlowInstrText: autoDraw = False
+43.2910 	EXP 	SlowInstrText: text = 'If the statement is true, press the “F” key on your keyboard with your left pointer finger; if the statement is false, press the “J” key on your keyboard with your right pointer finger. Press F to continue'
+43.2910 	EXP 	SlowInstrText: autoDraw = True
+43.6549 	EXP 	Imported InfinityThesisPracticeStimuli.xlsx as conditions, 10 conditions, 2 params
+43.6558 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+43.6564 	EXP 	New trial (rep=0, index=0): {'practicetext': 'A clock is used to tell time', 'practicecorrect': 'f'}
+43.6788 	DATA 	Keypress: f
+43.6895 	EXP 	SlowInstrText: autoDraw = False
+43.6895 	EXP 	PracticeText_2: text = 'A clock is used to tell time'
+43.6895 	EXP 	fixcross1: autoDraw = True
+43.7233 	EXP 	FTrue: autoDraw = True
+43.7233 	EXP 	JFALSE: autoDraw = True
+44.1912 	EXP 	fixcross1: autoDraw = False
+44.6741 	EXP 	PracticeText_2: autoDraw = True
+44.8638 	DATA 	Keypress: f
+44.8900 	EXP 	fixcross1: autoDraw = False
+44.8900 	EXP 	PracticeText_2: autoDraw = False
+44.8900 	EXP 	FTrue: autoDraw = False
+44.8900 	EXP 	JFALSE: autoDraw = False
+44.8900 	EXP 	text: autoDraw = True
+45.8101 	EXP 	New trial (rep=0, index=1): {'practicetext': 'Humans cannot breathe water', 'practicecorrect': 'f'}
+45.8211 	DATA 	Keypress: space
+45.8416 	EXP 	text: autoDraw = False
+45.8416 	EXP 	PracticeText_2: text = 'Humans cannot breathe water'
+45.8416 	EXP 	fixcross1: autoDraw = True
+45.8750 	EXP 	FTrue: autoDraw = True
+45.8750 	EXP 	JFALSE: autoDraw = True
+46.3569 	EXP 	fixcross1: autoDraw = False
+46.8250 	EXP 	PracticeText_2: autoDraw = True
+47.2664 	DATA 	Keypress: f
+47.2746 	EXP 	fixcross1: autoDraw = False
+47.2746 	EXP 	PracticeText_2: autoDraw = False
+47.2746 	EXP 	FTrue: autoDraw = False
+47.2746 	EXP 	JFALSE: autoDraw = False
+47.2746 	EXP 	text: autoDraw = True
+47.5928 	EXP 	New trial (rep=0, index=2): {'practicetext': 'A circle is a shape', 'practicecorrect': 'f'}
+47.6056 	DATA 	Keypress: space
+47.6236 	EXP 	text: autoDraw = False
+47.6236 	EXP 	PracticeText_2: text = 'A circle is a shape'
+47.6236 	EXP 	fixcross1: autoDraw = True
+47.6568 	EXP 	FTrue: autoDraw = True
+47.6568 	EXP 	JFALSE: autoDraw = True
+48.1236 	EXP 	fixcross1: autoDraw = False
+48.6067 	EXP 	PracticeText_2: autoDraw = True
+48.9975 	DATA 	Keypress: f
+49.0074 	EXP 	fixcross1: autoDraw = False
+49.0074 	EXP 	PracticeText_2: autoDraw = False
+49.0074 	EXP 	FTrue: autoDraw = False
+49.0074 	EXP 	JFALSE: autoDraw = False
+49.0074 	EXP 	text: autoDraw = True
+49.2919 	EXP 	New trial (rep=0, index=3): {'practicetext': 'Mississippi is a country', 'practicecorrect': 'j'}
+49.3060 	DATA 	Keypress: space
+49.3233 	EXP 	text: autoDraw = False
+49.3233 	EXP 	PracticeText_2: text = 'Mississippi is a country'
+49.3233 	EXP 	fixcross1: autoDraw = True
+49.3570 	EXP 	FTrue: autoDraw = True
+49.3570 	EXP 	JFALSE: autoDraw = True
+49.8237 	EXP 	fixcross1: autoDraw = False
+50.3080 	EXP 	PracticeText_2: autoDraw = True
+50.6967 	DATA 	Keypress: f
+50.7088 	EXP 	fixcross1: autoDraw = False
+50.7088 	EXP 	PracticeText_2: autoDraw = False
+50.7088 	EXP 	FTrue: autoDraw = False
+50.7088 	EXP 	JFALSE: autoDraw = False
+50.7088 	EXP 	text: autoDraw = True
+51.0084 	EXP 	New trial (rep=0, index=4): {'practicetext': 'A truck is an animal', 'practicecorrect': 'j'}
+51.0144 	DATA 	Keypress: space
+51.0248 	EXP 	text: autoDraw = False
+51.0248 	EXP 	PracticeText_2: text = 'A truck is an animal'
+51.0248 	EXP 	fixcross1: autoDraw = True
+51.0582 	EXP 	FTrue: autoDraw = True
+51.0582 	EXP 	JFALSE: autoDraw = True
+51.5255 	EXP 	fixcross1: autoDraw = False
+52.0089 	EXP 	PracticeText_2: autoDraw = True
+52.2126 	DATA 	Keypress: f
+52.2253 	EXP 	fixcross1: autoDraw = False
+52.2253 	EXP 	PracticeText_2: autoDraw = False
+52.2253 	EXP 	FTrue: autoDraw = False
+52.2253 	EXP 	JFALSE: autoDraw = False
+52.2253 	EXP 	text: autoDraw = True
+52.5595 	EXP 	New trial (rep=0, index=5): {'practicetext': 'The Earth is a star', 'practicecorrect': 'j'}
+52.5673 	DATA 	Keypress: space
+52.5745 	EXP 	text: autoDraw = False
+52.5745 	EXP 	PracticeText_2: text = 'The Earth is a star'
+52.5745 	EXP 	fixcross1: autoDraw = True
+52.6085 	EXP 	FTrue: autoDraw = True
+52.6085 	EXP 	JFALSE: autoDraw = True
+53.0751 	EXP 	fixcross1: autoDraw = False
+53.5586 	EXP 	PracticeText_2: autoDraw = True
+53.7463 	DATA 	Keypress: f
+53.7582 	EXP 	fixcross1: autoDraw = False
+53.7582 	EXP 	PracticeText_2: autoDraw = False
+53.7582 	EXP 	FTrue: autoDraw = False
+53.7582 	EXP 	JFALSE: autoDraw = False
+53.7582 	EXP 	text: autoDraw = True
+54.1136 	DATA 	Keypress: space
+54.1252 	EXP 	New trial (rep=0, index=6): {'practicetext': 'Jupiter is the planet we live on', 'practicecorrect': 'j'}
+54.1419 	EXP 	text: autoDraw = False
+54.1419 	EXP 	PracticeText_2: text = 'Jupiter is the planet we live on'
+54.1419 	EXP 	fixcross1: autoDraw = True
+54.1751 	EXP 	FTrue: autoDraw = True
+54.1751 	EXP 	JFALSE: autoDraw = True
+54.6419 	EXP 	fixcross1: autoDraw = False
+55.1257 	EXP 	PracticeText_2: autoDraw = True
+55.2989 	DATA 	Keypress: f
+55.3256 	EXP 	fixcross1: autoDraw = False
+55.3256 	EXP 	PracticeText_2: autoDraw = False
+55.3256 	EXP 	FTrue: autoDraw = False
+55.3256 	EXP 	JFALSE: autoDraw = False
+55.3256 	EXP 	text: autoDraw = True
+55.6437 	EXP 	New trial (rep=0, index=7): {'practicetext': 'Dinosaurs are extinct', 'practicecorrect': 'f'}
+55.6520 	DATA 	Keypress: space
+55.6580 	EXP 	text: autoDraw = False
+55.6580 	EXP 	PracticeText_2: text = 'Dinosaurs are extinct'
+55.6580 	EXP 	fixcross1: autoDraw = True
+55.6920 	EXP 	FTrue: autoDraw = True
+55.6920 	EXP 	JFALSE: autoDraw = True
+56.1589 	EXP 	fixcross1: autoDraw = False
+56.6421 	EXP 	PracticeText_2: autoDraw = True
+56.8482 	DATA 	Keypress: f
+56.8756 	EXP 	fixcross1: autoDraw = False
+56.8756 	EXP 	PracticeText_2: autoDraw = False
+56.8756 	EXP 	FTrue: autoDraw = False
+56.8756 	EXP 	JFALSE: autoDraw = False
+56.8756 	EXP 	text: autoDraw = True
+57.2262 	EXP 	New trial (rep=0, index=8): {'practicetext': 'Humans cannot eat food', 'practicecorrect': 'j'}
+57.2339 	DATA 	Keypress: space
+57.2413 	EXP 	text: autoDraw = False
+57.2413 	EXP 	PracticeText_2: text = 'Humans cannot eat food'
+57.2413 	EXP 	fixcross1: autoDraw = True
+57.2759 	EXP 	FTrue: autoDraw = True
+57.2759 	EXP 	JFALSE: autoDraw = True
+57.7423 	EXP 	fixcross1: autoDraw = False
+58.2252 	EXP 	PracticeText_2: autoDraw = True
+58.2661 	DATA 	Keypress: f
+58.2925 	EXP 	fixcross1: autoDraw = False
+58.2925 	EXP 	PracticeText_2: autoDraw = False
+58.2925 	EXP 	FTrue: autoDraw = False
+58.2925 	EXP 	JFALSE: autoDraw = False
+58.2925 	EXP 	text: autoDraw = True
+58.6107 	EXP 	New trial (rep=0, index=9): {'practicetext': 'Magenta is a color', 'practicecorrect': 'f'}
+58.6206 	DATA 	Keypress: space
+58.6419 	EXP 	text: autoDraw = False
+58.6419 	EXP 	PracticeText_2: text = 'Magenta is a color'
+58.6419 	EXP 	fixcross1: autoDraw = True
+58.6592 	EXP 	FTrue: autoDraw = True
+58.6592 	EXP 	JFALSE: autoDraw = True
+59.1421 	EXP 	fixcross1: autoDraw = False
+59.5790 	DATA 	Keypress: f
+59.6089 	EXP 	PracticeText_2: autoDraw = True
+59.8967 	DATA 	Keypress: space
+60.2616 	DATA 	Keypress: space
+61.0656 	DATA 	Keypress: space
+62.3647 	DATA 	Keypress: f
+62.3745 	EXP 	fixcross1: autoDraw = False
+62.3745 	EXP 	PracticeText_2: autoDraw = False
+62.3745 	EXP 	FTrue: autoDraw = False
+62.3745 	EXP 	JFALSE: autoDraw = False
+62.3745 	EXP 	text: autoDraw = True
+62.8195 	DATA 	Keypress: space
+62.8414 	EXP 	text: autoDraw = False
+62.8414 	EXP 	PracticeEndText: autoDraw = True
+64.2627 	EXP 	Imported InfinityThesisStimuli.xlsx as conditions, 152 conditions, 2 params
+64.2638 	EXP 	Created sequence: random, trialTypes=152, nReps=1, seed=None
+64.2643 	EXP 	New trial (rep=0, index=0): {'Statement': 'Pelicans are alive', 'Correct': 'f'}
+64.2716 	DATA 	Keypress: f
+64.2911 	EXP 	PracticeEndText: autoDraw = False
+64.2911 	EXP 	SlowText: text = 'Pelicans are alive'
+64.2911 	EXP 	polygon: autoDraw = True
+64.3247 	EXP 	ftrue: autoDraw = True
+64.3247 	EXP 	jfalse: autoDraw = True
+64.6914 	EXP 	polygon: autoDraw = False
+64.7757 	EXP 	SlowText: autoDraw = True
+65.0500 	DATA 	Keypress: f
+65.5670 	DATA 	Keypress: f
+65.5759 	EXP 	polygon: autoDraw = False
+65.5759 	EXP 	SlowText: autoDraw = False
+65.5759 	EXP 	ftrue: autoDraw = False
+65.5759 	EXP 	jfalse: autoDraw = False
+65.5759 	EXP 	encouragetext: autoDraw = True
+65.5759 	EXP 	encouragetext: autoDraw = False
+65.5759 	EXP 	text: autoDraw = True
+65.8964 	EXP 	New trial (rep=0, index=1): {'Statement': 'Orange is a shape', 'Correct': 'j'}
+65.9058 	DATA 	Keypress: space
+65.9260 	EXP 	text: autoDraw = False
+65.9260 	EXP 	SlowText: text = 'Orange is a shape'
+65.9260 	EXP 	polygon: autoDraw = True
+65.9593 	EXP 	ftrue: autoDraw = True
+65.9593 	EXP 	jfalse: autoDraw = True
+66.3250 	EXP 	polygon: autoDraw = False
+66.4082 	EXP 	SlowText: autoDraw = True
+66.8468 	DATA 	Keypress: f
+67.2321 	DATA 	Keypress: f
+67.2417 	EXP 	polygon: autoDraw = False
+67.2417 	EXP 	SlowText: autoDraw = False
+67.2417 	EXP 	ftrue: autoDraw = False
+67.2417 	EXP 	jfalse: autoDraw = False
+67.2417 	EXP 	encouragetext: autoDraw = True
+67.2417 	EXP 	encouragetext: autoDraw = False
+67.2417 	EXP 	text: autoDraw = True
+67.4937 	EXP 	New trial (rep=0, index=2): {'Statement': 'Mushrooms reproduce', 'Correct': 'f'}
+67.5001 	DATA 	Keypress: space
+67.5089 	EXP 	text: autoDraw = False
+67.5089 	EXP 	SlowText: text = 'Mushrooms reproduce'
+67.5089 	EXP 	polygon: autoDraw = True
+67.5426 	EXP 	ftrue: autoDraw = True
+67.5426 	EXP 	jfalse: autoDraw = True
+67.9099 	EXP 	polygon: autoDraw = False
+67.9927 	EXP 	SlowText: autoDraw = True
+68.1814 	DATA 	Keypress: escape
+68.5450 	EXP 	window1: mouseVisible = True
