@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Feb 16 17:11:43 2022
+    on Wed Feb 16 19:49:38 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -12,6 +12,10 @@ If you publish work using this script the most relevant publication is:
 """
 
 from __future__ import absolute_import, division
+
+import psychopy
+psychopy.useVersion('latest')
+
 
 from psychopy import locale_setup
 from psychopy import prefs
@@ -36,7 +40,7 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
-expName = 'Scientific and Linguistic Understanding'  # from the Builder filename that created this script
+expName = 'slow'  # from the Builder filename that created this script
 expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
@@ -208,7 +212,7 @@ key_resp_4 = keyboard.Keyboard()
 # Initialize components for Routine "EndStudy"
 EndStudyClock = core.Clock()
 EndStudyText = visual.TextStim(win=win, name='EndStudyText',
-    text='Thank you for completing this study. Please return to Qualtrics and input the following unique code into the survey: \n\nbravecoconut155',
+    text='Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nDOG123\n\nPress Space to End the Study and Save your Results',
     font='Open Sans',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
@@ -1074,7 +1078,7 @@ for thisSlowLoop in SlowLoop:
                 encouragekey.rt = _encouragekey_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
-        if SlowLoop.thisN != 20:
+        if SlowLoop.thisN != 40:
             continueRoutine = False
         
         # check for quit (typically the Esc key)
@@ -1234,6 +1238,7 @@ SlowLoop.saveAsText(filename + 'SlowLoop.csv', delim=',',
 
 # ------Prepare to start Routine "EndStudy"-------
 continueRoutine = True
+routineTimer.add(30.000000)
 # update component parameters for each repeat
 endstudykey.keys = []
 endstudykey.rt = []
@@ -1254,7 +1259,7 @@ EndStudyClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
 # -------Run Routine "EndStudy"-------
-while continueRoutine:
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = EndStudyClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=EndStudyClock)
@@ -1292,8 +1297,16 @@ while continueRoutine:
         waitOnFlip = True
         win.callOnFlip(endstudykey.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(endstudykey.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if endstudykey.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > endstudykey.tStartRefresh + 30-frameTolerance:
+            # keep track of stop time/frame for later
+            endstudykey.tStop = t  # not accounting for scr refresh
+            endstudykey.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(endstudykey, 'tStopRefresh')  # time at next scr refresh
+            endstudykey.status = FINISHED
     if endstudykey.status == STARTED and not waitOnFlip:
-        theseKeys = endstudykey.getKeys(keyList=['e'], waitRelease=False)
+        theseKeys = endstudykey.getKeys(keyList=['space'], waitRelease=False)
         _endstudykey_allKeys.extend(theseKeys)
         if len(_endstudykey_allKeys):
             endstudykey.keys = _endstudykey_allKeys[-1].name  # just the last key pressed
@@ -1333,8 +1346,6 @@ if endstudykey.keys != None:  # we had a response
 thisExp.addData('endstudykey.started', endstudykey.tStartRefresh)
 thisExp.addData('endstudykey.stopped', endstudykey.tStopRefresh)
 thisExp.nextEntry()
-# the Routine "EndStudy" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
