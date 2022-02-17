@@ -767,7 +767,6 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="SlowTrial"/>
-    <Routine name="Encouragement"/>
     <Routine name="Advance"/>
     <LoopTerminator name="SlowLoop"/>
     <Routine name="EndStudy"/>
