@@ -218,7 +218,7 @@ async function experimentInit() {
   PracticeEndText = new visual.TextStim({
     win: psychoJS.window,
     name: 'PracticeEndText',
-    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress F to continue',
+    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress SPACE to continue',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -586,7 +586,7 @@ function SlowInstrRoutineEachFrame() {
   }
 
     if (SlowInstrKey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = SlowInstrKey.getKeys({keyList: ['f'], waitRelease: false});
+      let theseKeys = SlowInstrKey.getKeys({keyList: ['space'], waitRelease: false});
       _SlowInstrKey_allKeys = _SlowInstrKey_allKeys.concat(theseKeys);
       if (_SlowInstrKey_allKeys.length > 0) {
         SlowInstrKey.keys = _SlowInstrKey_allKeys[_SlowInstrKey_allKeys.length - 1].name;  // just the last key pressed
@@ -1001,7 +1001,7 @@ function PracticeEndRoutineEachFrame() {
     }
 
     if (key_resp_3.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_3.getKeys({keyList: ['f'], waitRelease: false});
+      let theseKeys = key_resp_3.getKeys({keyList: ['SPACE'], waitRelease: false});
       _key_resp_3_allKeys = _key_resp_3_allKeys.concat(theseKeys);
       if (_key_resp_3_allKeys.length > 0) {
         key_resp_3.keys = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].name;  // just the last key pressed
@@ -1258,7 +1258,7 @@ function EncouragementRoutineBegin(snapshot) {
     EncouragementClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(10.000000);
+    routineTimer.add(13.000000);
     // update component parameters for each repeat
     encouragekey.keys = undefined;
     encouragekey.rt = undefined;
@@ -1293,13 +1293,13 @@ function EncouragementRoutineEachFrame() {
       encouragetext.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 13 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (encouragetext.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       encouragetext.setAutoDraw(false);
     }
     
     // *encouragekey* updates
-    if (t >= 0.0 && encouragekey.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 3 && encouragekey.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       encouragekey.tStart = t;  // (not accounting for frame time here)
       encouragekey.frameNStart = frameN;  // exact frame index
@@ -1310,7 +1310,7 @@ function EncouragementRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { encouragekey.clearEvents(); });
     }
 
-    frameRemains = 0.0 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 3 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (encouragekey.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       encouragekey.status = PsychoJS.Status.FINISHED;
   }
