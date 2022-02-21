@@ -66,9 +66,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'},
     {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
-    {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'}
+    {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'},
+    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'}
   ]
 });
 
@@ -309,10 +309,10 @@ async function experimentInit() {
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nDOG123\n\nPress Space to End the Study and Save your Results',
+    text: 'Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nDOG123\n\nPress Space to finish study and wait for message “thank you for your patience” to press ‘ok’ and return to Qualtrics.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
     depth: 0.0 
   });
