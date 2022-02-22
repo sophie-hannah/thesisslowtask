@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Thu Feb 17 13:14:42 2022
+    on Tue Feb 22 11:44:34 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -42,9 +42,6 @@ os.chdir(_thisDir)
 psychopyVersion = '2021.2.3'
 expName = 'slow'  # from the Builder filename that created this script
 expInfo = {'participant': ''}
-dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
-if dlg.OK == False:
-    core.quit()  # user pressed cancel
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
@@ -119,14 +116,14 @@ PracticeText_2 = visual.TextStim(win=win, name='PracticeText_2',
     depth=-1.0);
 key_resp_5 = keyboard.Keyboard()
 FTrue = visual.TextStim(win=win, name='FTrue',
-    text='F=TRUE',
+    text='TRUE',
     font='Open Sans',
     pos=(-.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-3.0);
 JFALSE = visual.TextStim(win=win, name='JFALSE',
-    text='J=FALSE',
+    text='FALSE',
     font='Open Sans',
     pos=(.5,.3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
@@ -147,7 +144,7 @@ key_resp_4 = keyboard.Keyboard()
 # Initialize components for Routine "PracticeEnd"
 PracticeEndClock = core.Clock()
 PracticeEndText = visual.TextStim(win=win, name='PracticeEndText',
-    text='You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress F to continue',
+    text='You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress SPACE to continue',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
@@ -173,14 +170,14 @@ SlowText = visual.TextStim(win=win, name='SlowText',
 SlowKey = keyboard.Keyboard()
 myCount = 0
 ftrue = visual.TextStim(win=win, name='ftrue',
-    text='F=TRUE',
+    text='TRUE',
     font='Open Sans',
     pos=(-.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-4.0);
 jfalse = visual.TextStim(win=win, name='jfalse',
-    text='J=FALSE',
+    text='FALSE',
     font='Open Sans',
     pos=(.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
@@ -212,9 +209,9 @@ key_resp_4 = keyboard.Keyboard()
 # Initialize components for Routine "EndStudy"
 EndStudyClock = core.Clock()
 EndStudyText = visual.TextStim(win=win, name='EndStudyText',
-    text='Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nDOG123\n\nPress Space to End the Study and Save your Results',
+    text='Thank you for completing this study! \n\nPlease remember the following completion code to enter into TurkPrime (you may want to write it down): \n\nDOG123\n\nDO NOT EXIT PAGE UNTIL YOU SEE MESSAGE:\n“Thank you for your patience” \nOnce this message appears, press okay and return to TurkPrime\nPress SPACE to complete study',
     font='Open Sans',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
@@ -366,7 +363,7 @@ for thisSlowInstrLoop in SlowInstrLoop:
                 win.timeOnFlip(SlowInstrKey, 'tStopRefresh')  # time at next scr refresh
                 SlowInstrKey.status = FINISHED
         if SlowInstrKey.status == STARTED and not waitOnFlip:
-            theseKeys = SlowInstrKey.getKeys(keyList=['f'], waitRelease=False)
+            theseKeys = SlowInstrKey.getKeys(keyList=['space'], waitRelease=False)
             _SlowInstrKey_allKeys.extend(theseKeys)
             if len(_SlowInstrKey_allKeys):
                 SlowInstrKey.keys = _SlowInstrKey_allKeys[-1].name  # just the last key pressed
@@ -749,7 +746,7 @@ while continueRoutine:
     
     # *key_resp_3* updates
     waitOnFlip = False
-    if key_resp_3.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+    if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         key_resp_3.frameNStart = frameN  # exact frame index
         key_resp_3.tStart = t  # local t and not account for scr refresh
@@ -761,7 +758,7 @@ while continueRoutine:
         win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp_3.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp_3.getKeys(keyList=['f'], waitRelease=False)
+        theseKeys = key_resp_3.getKeys(keyList=['space'], waitRelease=False)
         _key_resp_3_allKeys.extend(theseKeys)
         if len(_key_resp_3_allKeys):
             key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
@@ -918,14 +915,6 @@ for thisSlowLoop in SlowLoop:
             ftrue.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(ftrue, 'tStartRefresh')  # time at next scr refresh
             ftrue.setAutoDraw(True)
-        if ftrue.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > ftrue.tStartRefresh + 20-frameTolerance:
-                # keep track of stop time/frame for later
-                ftrue.tStop = t  # not accounting for scr refresh
-                ftrue.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(ftrue, 'tStopRefresh')  # time at next scr refresh
-                ftrue.setAutoDraw(False)
         
         # *jfalse* updates
         if jfalse.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
@@ -935,14 +924,6 @@ for thisSlowLoop in SlowLoop:
             jfalse.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(jfalse, 'tStartRefresh')  # time at next scr refresh
             jfalse.setAutoDraw(True)
-        if jfalse.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > jfalse.tStartRefresh + 20-frameTolerance:
-                # keep track of stop time/frame for later
-                jfalse.tStop = t  # not accounting for scr refresh
-                jfalse.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(jfalse, 'tStopRefresh')  # time at next scr refresh
-                jfalse.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -989,7 +970,6 @@ for thisSlowLoop in SlowLoop:
     
     # ------Prepare to start Routine "Encouragement"-------
     continueRoutine = True
-    routineTimer.add(10.000000)
     # update component parameters for each repeat
     encouragekey.keys = []
     encouragekey.rt = []
@@ -1010,7 +990,7 @@ for thisSlowLoop in SlowLoop:
     frameN = -1
     
     # -------Run Routine "Encouragement"-------
-    while continueRoutine and routineTimer.getTime() > 0:
+    while continueRoutine:
         # get current time
         t = EncouragementClock.getTime()
         tThisFlip = win.getFutureFlipTime(clock=EncouragementClock)
@@ -1026,18 +1006,10 @@ for thisSlowLoop in SlowLoop:
             encouragetext.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(encouragetext, 'tStartRefresh')  # time at next scr refresh
             encouragetext.setAutoDraw(True)
-        if encouragetext.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > encouragetext.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                encouragetext.tStop = t  # not accounting for scr refresh
-                encouragetext.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(encouragetext, 'tStopRefresh')  # time at next scr refresh
-                encouragetext.setAutoDraw(False)
         
         # *encouragekey* updates
         waitOnFlip = False
-        if encouragekey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if encouragekey.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
             # keep track of start time/frame for later
             encouragekey.frameNStart = frameN  # exact frame index
             encouragekey.tStart = t  # local t and not account for scr refresh
@@ -1048,14 +1020,6 @@ for thisSlowLoop in SlowLoop:
             waitOnFlip = True
             win.callOnFlip(encouragekey.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(encouragekey.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if encouragekey.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > encouragekey.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                encouragekey.tStop = t  # not accounting for scr refresh
-                encouragekey.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(encouragekey, 'tStopRefresh')  # time at next scr refresh
-                encouragekey.status = FINISHED
         if encouragekey.status == STARTED and not waitOnFlip:
             theseKeys = encouragekey.getKeys(keyList=['space'], waitRelease=False)
             _encouragekey_allKeys.extend(theseKeys)
@@ -1098,6 +1062,8 @@ for thisSlowLoop in SlowLoop:
         SlowLoop.addData('encouragekey.rt', encouragekey.rt)
     SlowLoop.addData('encouragekey.started', encouragekey.tStartRefresh)
     SlowLoop.addData('encouragekey.stopped', encouragekey.tStopRefresh)
+    # the Routine "Encouragement" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "Advance"-------
     continueRoutine = True
