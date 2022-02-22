@@ -64,8 +64,8 @@ psychoJS.start({
   expInfo: expInfo,
   resources: [
     {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
-    {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'},
-    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'}
+    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'},
+    {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'}
   ]
 });
 
@@ -171,7 +171,7 @@ async function experimentInit() {
   FTrue = new visual.TextStim({
     win: psychoJS.window,
     name: 'FTrue',
-    text: 'F=TRUE',
+    text: 'TRUE',
     font: 'Open Sans',
     units: undefined, 
     pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -182,7 +182,7 @@ async function experimentInit() {
   JFALSE = new visual.TextStim({
     win: psychoJS.window,
     name: 'JFALSE',
-    text: 'J=FALSE',
+    text: 'FALSE',
     font: 'Open Sans',
     units: undefined, 
     pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -249,7 +249,7 @@ async function experimentInit() {
   ftrue = new visual.TextStim({
     win: psychoJS.window,
     name: 'ftrue',
-    text: 'F=TRUE',
+    text: 'TRUE',
     font: 'Open Sans',
     units: undefined, 
     pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -260,7 +260,7 @@ async function experimentInit() {
   jfalse = new visual.TextStim({
     win: psychoJS.window,
     name: 'jfalse',
-    text: 'J=FALSE',
+    text: 'FALSE',
     font: 'Open Sans',
     units: undefined, 
     pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -288,7 +288,7 @@ async function experimentInit() {
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nDOG123\n\nPress Space to finish study and wait for message “thank you for your patience” to press ‘ok’ and return to Qualtrics.',
+    text: 'Thank you for completing this study! \n\nPlease remember the following completion code to enter into TurkPrime (you may want to write it down): \n\nDOG123\n\nDO NOT EXIT PAGE UNTIL YOU SEE MESSAGE:\n“Thank you for your patience” \nOnce this message appears, press okay and return to TurkPrime\nPress SPACE to complete study',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -1170,10 +1170,6 @@ function SlowTrialRoutineEachFrame() {
       ftrue.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (ftrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      ftrue.setAutoDraw(false);
-    }
     
     // *jfalse* updates
     if (t >= 0.05 && jfalse.status === PsychoJS.Status.NOT_STARTED) {
@@ -1184,10 +1180,6 @@ function SlowTrialRoutineEachFrame() {
       jfalse.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 20 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (jfalse.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      jfalse.setAutoDraw(false);
-    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -1259,7 +1251,6 @@ function EncouragementRoutineBegin(snapshot) {
     EncouragementClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(13.000000);
     // update component parameters for each repeat
     encouragekey.keys = undefined;
     encouragekey.rt = undefined;
@@ -1295,10 +1286,6 @@ function EncouragementRoutineEachFrame() {
       encouragetext.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 13 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (encouragetext.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      encouragetext.setAutoDraw(false);
-    }
     
     // *encouragekey* updates
     if (t >= 3 && encouragekey.status === PsychoJS.Status.NOT_STARTED) {
@@ -1311,11 +1298,6 @@ function EncouragementRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { encouragekey.start(); }); // start on screen flip
       psychoJS.window.callOnFlip(function() { encouragekey.clearEvents(); });
     }
-
-    frameRemains = 3 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (encouragekey.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      encouragekey.status = PsychoJS.Status.FINISHED;
-  }
 
     if (encouragekey.status === PsychoJS.Status.STARTED) {
       let theseKeys = encouragekey.getKeys({keyList: ['space'], waitRelease: false});
@@ -1350,7 +1332,7 @@ function EncouragementRoutineEachFrame() {
     });
     
     // refresh the screen if continuing
-    if (continueRoutine && routineTimer.getTime() > 0) {
+    if (continueRoutine) {
       return Scheduler.Event.FLIP_REPEAT;
     } else {
       return Scheduler.Event.NEXT;
@@ -1374,6 +1356,9 @@ function EncouragementRoutineEnd() {
         }
     
     encouragekey.stop();
+    // the Routine "Encouragement" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
     return Scheduler.Event.NEXT;
   };
 }
