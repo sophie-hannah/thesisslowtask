@@ -63,9 +63,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
+    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'},
     {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'},
-    {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
-    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'}
+    {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'}
   ]
 });
 
@@ -210,7 +210,7 @@ async function experimentInit() {
   PracticeEndText = new visual.TextStim({
     win: psychoJS.window,
     name: 'PracticeEndText',
-    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress SPACE to continue',
+    text: 'You have finished the trial period. You will now complete the official task. Please take your time and judge the following statements to the best of your ability.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress SPACE to continue',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,

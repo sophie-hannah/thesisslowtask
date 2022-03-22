@@ -473,7 +473,7 @@
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.&amp;#10;&amp;#10;Press ‘F’ if the statement is true and ‘J’ if the statement is false. &amp;#10;&amp;#10;Press SPACE to continue" valType="str"/>
+        <Param name="text" updates="constant" val="You have finished the trial period. You will now complete the official task. Please take your time and judge the following statements to the best of your ability.&amp;#10;&amp;#10;Press ‘F’ if the statement is true and ‘J’ if the statement is false. &amp;#10;&amp;#10;Press SPACE to continue" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
