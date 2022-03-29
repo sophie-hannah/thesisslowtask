@@ -71,8 +71,8 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'},
     {'name': 'SlowInstructionsSheet2.xlsx', 'path': 'SlowInstructionsSheet2.xlsx'},
+    {'name': 'InfinityThesisPracticeStimuli.xlsx', 'path': 'InfinityThesisPracticeStimuli.xlsx'},
     {'name': 'InfinityThesisStimuli.xlsx', 'path': 'InfinityThesisStimuli.xlsx'}
   ]
 });
@@ -111,6 +111,7 @@ var PracticeText_2;
 var key_resp_5;
 var FTrue;
 var JFALSE;
+var SlowTonePrac;
 var AdvanceClock;
 var text;
 var key_resp_4;
@@ -124,6 +125,7 @@ var SlowKey;
 var myCount;
 var ftrue;
 var jfalse;
+var SlowTone;
 var EncouragementClock;
 var encouragetext;
 var encouragekey;
@@ -198,6 +200,12 @@ async function experimentInit() {
     depth: -4.0 
   });
   
+  SlowTonePrac = new sound.Sound({
+    win: psychoJS.window,
+    value: 'A',
+    secs: 0.2,
+    });
+  SlowTonePrac.setVolume(1.0);
   // Initialize components for Routine "Advance"
   AdvanceClock = new util.Clock();
   text = new visual.TextStim({
@@ -276,6 +284,12 @@ async function experimentInit() {
     depth: -5.0 
   });
   
+  SlowTone = new sound.Sound({
+    win: psychoJS.window,
+    value: 'A',
+    secs: 0.2,
+    });
+  SlowTone.setVolume(1.0);
   // Initialize components for Routine "Encouragement"
   EncouragementClock = new util.Clock();
   encouragetext = new visual.TextStim({
@@ -526,7 +540,7 @@ function SlowInstrRoutineBegin(snapshot) {
     SlowInstrClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(30.000000);
+    routineTimer.add(31.000000);
     // update component parameters for each repeat
     SlowInstrText.setText(SlowInstructions);
     SlowInstrKey.keys = undefined;
@@ -569,7 +583,7 @@ function SlowInstrRoutineEachFrame() {
     }
     
     // *SlowInstrKey* updates
-    if (t >= 0.0 && SlowInstrKey.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && SlowInstrKey.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       SlowInstrKey.tStart = t;  // (not accounting for frame time here)
       SlowInstrKey.frameNStart = frameN;  // exact frame index
@@ -580,7 +594,7 @@ function SlowInstrRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { SlowInstrKey.clearEvents(); });
     }
 
-    frameRemains = 0.0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (SlowInstrKey.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       SlowInstrKey.status = PsychoJS.Status.FINISHED;
   }
@@ -654,11 +668,14 @@ function slowpracRoutineBegin(snapshot) {
     slowpracClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
+    routineTimer.add(11.000000);
     // update component parameters for each repeat
     PracticeText_2.setText(practicetext);
     key_resp_5.keys = undefined;
     key_resp_5.rt = undefined;
     _key_resp_5_allKeys = [];
+    SlowTonePrac.secs=0.2;
+    SlowTonePrac.setVolume(1.0);
     // keep track of which components have finished
     slowpracComponents = [];
     slowpracComponents.push(fixcross1);
@@ -666,6 +683,7 @@ function slowpracRoutineBegin(snapshot) {
     slowpracComponents.push(key_resp_5);
     slowpracComponents.push(FTrue);
     slowpracComponents.push(JFALSE);
+    slowpracComponents.push(SlowTonePrac);
     
     for (const thisComponent of slowpracComponents)
       if ('status' in thisComponent)
@@ -706,6 +724,10 @@ function slowpracRoutineEachFrame() {
       PracticeText_2.setAutoDraw(true);
     }
 
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (PracticeText_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      PracticeText_2.setAutoDraw(false);
+    }
     
     // *key_resp_5* updates
     if (t >= 1 && key_resp_5.status === PsychoJS.Status.NOT_STARTED) {
@@ -718,6 +740,11 @@ function slowpracRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { key_resp_5.start(); }); // start on screen flip
       psychoJS.window.callOnFlip(function() { key_resp_5.clearEvents(); });
     }
+
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (key_resp_5.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      key_resp_5.status = PsychoJS.Status.FINISHED;
+  }
 
     if (key_resp_5.status === PsychoJS.Status.STARTED) {
       let theseKeys = key_resp_5.getKeys({keyList: ['f', 'j'], waitRelease: false});
@@ -738,7 +765,7 @@ function slowpracRoutineEachFrame() {
     
     
     // *FTrue* updates
-    if (t >= 0.05 && FTrue.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && FTrue.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       FTrue.tStart = t;  // (not accounting for frame time here)
       FTrue.frameNStart = frameN;  // exact frame index
@@ -746,9 +773,13 @@ function slowpracRoutineEachFrame() {
       FTrue.setAutoDraw(true);
     }
 
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (FTrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      FTrue.setAutoDraw(false);
+    }
     
     // *JFALSE* updates
-    if (t >= 0.05 && JFALSE.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && JFALSE.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       JFALSE.tStart = t;  // (not accounting for frame time here)
       JFALSE.frameNStart = frameN;  // exact frame index
@@ -756,6 +787,26 @@ function slowpracRoutineEachFrame() {
       JFALSE.setAutoDraw(true);
     }
 
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (JFALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      JFALSE.setAutoDraw(false);
+    }
+    // start/stop SlowTonePrac
+    if (t >= 7 && SlowTonePrac.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      SlowTonePrac.tStart = t;  // (not accounting for frame time here)
+      SlowTonePrac.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ SlowTonePrac.play(); });  // screen flip
+      SlowTonePrac.status = PsychoJS.Status.STARTED;
+    }
+    frameRemains = 7 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (SlowTonePrac.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      if (0.2 > 0.5) {
+        SlowTonePrac.stop();  // stop the sound (if longer than duration)
+      }
+      SlowTonePrac.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -774,7 +825,7 @@ function slowpracRoutineEachFrame() {
       }
     
     // refresh the screen if continuing
-    if (continueRoutine) {
+    if (continueRoutine && routineTimer.getTime() > 0) {
       return Scheduler.Event.FLIP_REPEAT;
     } else {
       return Scheduler.Event.NEXT;
@@ -808,9 +859,7 @@ function slowpracRoutineEnd() {
         }
     
     key_resp_5.stop();
-    // the Routine "slowprac" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
+    SlowTonePrac.stop();  // ensure sound has stopped at end of routine
     return Scheduler.Event.NEXT;
   };
 }
@@ -1072,6 +1121,7 @@ function SlowTrialRoutineBegin(snapshot) {
     SlowTrialClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
+    routineTimer.add(11.000000);
     // update component parameters for each repeat
     SlowText.setText(Statement);
     SlowKey.keys = undefined;
@@ -1082,6 +1132,8 @@ function SlowTrialRoutineBegin(snapshot) {
         SlowLoop.finished = true;
     }
     
+    SlowTone.secs=0.2;
+    SlowTone.setVolume(1.0);
     // keep track of which components have finished
     SlowTrialComponents = [];
     SlowTrialComponents.push(polygon);
@@ -1089,6 +1141,7 @@ function SlowTrialRoutineBegin(snapshot) {
     SlowTrialComponents.push(SlowKey);
     SlowTrialComponents.push(ftrue);
     SlowTrialComponents.push(jfalse);
+    SlowTrialComponents.push(SlowTone);
     
     for (const thisComponent of SlowTrialComponents)
       if ('status' in thisComponent)
@@ -1115,13 +1168,13 @@ function SlowTrialRoutineEachFrame() {
       polygon.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 0.4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 0.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (polygon.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       polygon.setAutoDraw(false);
     }
     
     // *SlowText* updates
-    if (t >= 0.5 && SlowText.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && SlowText.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       SlowText.tStart = t;  // (not accounting for frame time here)
       SlowText.frameNStart = frameN;  // exact frame index
@@ -1129,6 +1182,10 @@ function SlowTrialRoutineEachFrame() {
       SlowText.setAutoDraw(true);
     }
 
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (SlowText.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      SlowText.setAutoDraw(false);
+    }
     
     // *SlowKey* updates
     if (t >= 1.0 && SlowKey.status === PsychoJS.Status.NOT_STARTED) {
@@ -1141,6 +1198,11 @@ function SlowTrialRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { SlowKey.start(); }); // start on screen flip
       psychoJS.window.callOnFlip(function() { SlowKey.clearEvents(); });
     }
+
+    frameRemains = 1.0 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (SlowKey.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      SlowKey.status = PsychoJS.Status.FINISHED;
+  }
 
     if (SlowKey.status === PsychoJS.Status.STARTED) {
       let theseKeys = SlowKey.getKeys({keyList: ['f', 'j'], waitRelease: false});
@@ -1161,7 +1223,7 @@ function SlowTrialRoutineEachFrame() {
     
     
     // *ftrue* updates
-    if (t >= 0.05 && ftrue.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && ftrue.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       ftrue.tStart = t;  // (not accounting for frame time here)
       ftrue.frameNStart = frameN;  // exact frame index
@@ -1169,9 +1231,13 @@ function SlowTrialRoutineEachFrame() {
       ftrue.setAutoDraw(true);
     }
 
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (ftrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      ftrue.setAutoDraw(false);
+    }
     
     // *jfalse* updates
-    if (t >= 0.05 && jfalse.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && jfalse.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       jfalse.tStart = t;  // (not accounting for frame time here)
       jfalse.frameNStart = frameN;  // exact frame index
@@ -1179,6 +1245,26 @@ function SlowTrialRoutineEachFrame() {
       jfalse.setAutoDraw(true);
     }
 
+    frameRemains = 1 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (jfalse.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      jfalse.setAutoDraw(false);
+    }
+    // start/stop SlowTone
+    if (t >= 7 && SlowTone.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      SlowTone.tStart = t;  // (not accounting for frame time here)
+      SlowTone.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ SlowTone.play(); });  // screen flip
+      SlowTone.status = PsychoJS.Status.STARTED;
+    }
+    frameRemains = 7 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (SlowTone.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      if (0.2 > 0.5) {
+        SlowTone.stop();  // stop the sound (if longer than duration)
+      }
+      SlowTone.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -1197,7 +1283,7 @@ function SlowTrialRoutineEachFrame() {
       }
     
     // refresh the screen if continuing
-    if (continueRoutine) {
+    if (continueRoutine && routineTimer.getTime() > 0) {
       return Scheduler.Event.FLIP_REPEAT;
     } else {
       return Scheduler.Event.NEXT;
@@ -1231,9 +1317,7 @@ function SlowTrialRoutineEnd() {
         }
     
     SlowKey.stop();
-    // the Routine "SlowTrial" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
+    SlowTone.stop();  // ensure sound has stopped at end of routine
     return Scheduler.Event.NEXT;
   };
 }
@@ -1414,7 +1498,7 @@ function EndStudyRoutineEachFrame() {
     }
     
     // *endstudykey* updates
-    if (t >= 0.0 && endstudykey.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 3 && endstudykey.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       endstudykey.tStart = t;  // (not accounting for frame time here)
       endstudykey.frameNStart = frameN;  // exact frame index
@@ -1425,8 +1509,8 @@ function EndStudyRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { endstudykey.clearEvents(); });
     }
 
-    frameRemains = 0.0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (endstudykey.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+    frameRemains = 30  - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if ((endstudykey.status === PsychoJS.Status.STARTED || endstudykey.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
       endstudykey.status = PsychoJS.Status.FINISHED;
   }
 
